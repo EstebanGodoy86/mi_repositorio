@@ -110,6 +110,7 @@ table{
 
 
 
+
 .nombremomo{
 display:inline;
 background-color:transparent;
@@ -205,11 +206,12 @@ align-items: baseline;
 .cajaC{
 	    display: inline-flex;
 	    margin: 1rem;
-	    background-color:rgba(73,7,97,0.7);
+	    background: radial-gradient(#F8A521,#F2D409,#651773);
 	    justify-content: center;
 	    justify-self: center;
 	    width: 70rem;
 }
+
 
 .venus__img{
 	   display: flex;
@@ -252,6 +254,24 @@ transition: 2s;
 	transition: transform 4s;}
 
 
+.esteban{
+	animation-name:esteban;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+	@keyframes esteban{
+	0%{background: #3B0551;}
+	20%{background:#3B0551 ;}
+	40%{background: #ECEF0B;}
+	60%{background: #3B0551 ;}
+	80%{background: #ECEF0B;}
+	100%{background: #3B0551 ;}
+}
+
+
+
 .quiensoy1{
 	display:flex;
 	border-radius: 6rem;
@@ -268,17 +288,22 @@ transition: 2s;
 
 }
 
-.parr1{
-	 background-color:rgba(73,7,97,0.7);
-	 margin: 2rem;
-      padding: 2rem;
-}
 .parr2{
-      background-color:rgba(73,7,97,0.7);
-      margin: 2rem;
-       padding: 2rem;     
+	background: violet;
+	animation-name: parr2animated;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
 }
 
+@keyframes parr2animated{
+	0%{background: #C68EDB;}
+	20%{background:#3B0551 ;}
+	40%{background:#C68EDB;}
+	60%{background: #3B0551 ;}
+	80%{background:#C68EDB;}
+	100%{background: #3B0551 ;}
+}
 
 
 .textRed{
