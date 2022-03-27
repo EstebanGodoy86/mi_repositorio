@@ -1,51 +1,68 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Momodeusilustradociones</title>
-
-
-<!-- abre header -->
-          
+     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     
+    <title>MomoDeus</title>
 </head>
+<body>
 
-    <body class="grid">
+    <!-- inicio nav -->
+
+    <header>    
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="momodeus" href="index.html"><img src="imagenes/logomomo.png" alt="logo de momodeus" width="100rem" height="100px"class=auto></a>
+            <a class="nombremomo" href="index.html"nombremomo><img  src="imagenes/MomoDeusNombreNegro.png" alt="nombrepng" width="400rem" height="100px"class=auto></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="quiensoy.html">Quien Soy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/momodeus_/?hl=es"target="_self">Mis Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulariodecontacto1.html"target="_self">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="promos.html"target="_self">Promociones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            MAS
+          </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="dondeestamos.html"target="_self">Donde estamos</a></li>
+                            <li><a class="dropdown-item" href="#">+ Otros Artistas</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ver mas...</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <!-- fin nav -->
 
 
-<header>
-
-<div class="cajaA">
-
-<a href="indexproyecto.html"></a>
-
-    <section class="caja_a">
-            <img class="logomomo" src="imagenes/logomomo.png" alt="logomomodeus">
-             <img  class="nombremomo" src="imagenes/MomoDeusNombreNegro.png" alt="nombrepng"> 
-         </section>
-</div>
-
-
-<!-- abre nav -->
-
-<nav>
-        <section class="cajaB">
-        <ul class="caja_b">
-            <div class="ini"><li><a href="quiensoy.html"target="_self">¿Quien soy?</a></li></div>
-            <div class="ini"><li><a href="formulariodecontacto1.html"target="_self">Contacto</a></li></div>
-            <div class="ini"><li><a href="dondeestamos.html"target="_self">Donde estamos</a></li></div>
-            <div class="ini"><li><a href="https://www.instagram.com/momodeus_/?hl=es"target="_self">Mis trabajos</a></li></div>
-            <div class="ini"><li><a href="promos.html"target="_self">Promociones</a></li></div>
-        </ul>
-        </section>
-</nav>
-
-
-<!-- cierra nav -->
-
-</header>
+    
 
 
 
@@ -99,42 +116,47 @@
 
 <!-- abre trabajos -->
 
-
-
 <article class="cajaE">
 
-    <h1 class="cajaee">Algunos Trabajos</h1>
-
-     <section class="caja_e-e">  
-       
-            <div class="mg"><img src="imagenes\erik.jpg"width="400" height="450"></div>
-        
-       
-            <div class="mg"><img src="imagenes\boxeo.png" width="400" height="450"></div>
-        
-       
-            <div class="mg"><img src="imagenes\chiara.png"width="400" height="450"></div>
-        
-      
-            <div class="mg" ><img src="imagenes\martinron.png"width="400" height="450"></div>
-        
-
-            <div class="mg"><img src="imagenes\maximo.png"width="400" height="450"></div>
-        
-       
-            <div class="mg"><img src="imagenes\noris.png"width="400" height="450"></div>
-        
-       
-            <div class="mg"><img src="imagenes\perro.png"width="400" height="450"></div>
-        
-       
-            <div class="mg"><img src="imagenes\lgante.png"width="400" height="450"></div>
-        
-    
-
-     </section>
+ <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="imagenes\erik.jpg"width="200" height="450"class="d-block w-auto" alt="erikGuitarra">
+    </div>
+    <div class="carousel-item">
+      <img src="imagenes\boxeo.png" width="200" height="450"class="d-block w-auto" alt="boxing">
+    </div>
+    <div class="carousel-item">
+       <img src="imagenes\chiara.png" width="200" height="450"class="d-block w-auto" alt="chiara">
+    </div>
+     <div class="carousel-item">
+       <img src="imagenes\martinron.png" width="200" height="450"class="d-block w-auto" alt="martin ron">
+    </div>
+     <div class="carousel-item">
+       <img src="imagenes\maximo.png" width="200" height="450"class="d-block w-auto" alt="viajando">
+    </div>
+     <div class="carousel-item">
+       <img src="imagenes\noris.png"width="200" height="450"class="d-block w-auto" alt="noris de paseo">
+    </div>
+     <div class="carousel-item">
+       <img src="imagenes\perro.png"width="200" height="450"class="d-block w-auto" alt="con la mascota">
+    </div> <div class="carousel-item">
+       <img src="imagenes\lgante.png" width="200" height="450"class="d-block w-auto" alt="lgante">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
 
 </article>
+
+
 
 <!-- cierra trabajos -->
 
@@ -291,5 +313,8 @@
 </div>
                         
 </footer>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
