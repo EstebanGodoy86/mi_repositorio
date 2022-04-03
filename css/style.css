@@ -4,17 +4,12 @@ html{
       margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
-
 }
-
 
 body{
      display: inline-grid;
 	background-image: url(../imagenes/carnevale.jpg);
 }
-
-
 
 a{
 	color: white;
@@ -23,50 +18,38 @@ a{
 	width: auto;
 }
 
-
 h1{
 	
 	text-align: center;
 	color:yellow;
 }
 
-
 h2{
 	text-align: center;
 }
-
-
 
 h3{
 	text-align: center;
 	color: white;
 }
 
-
-
 legend{
 	color:white;
 }
 
-
 label{
 	color: white;
 }
-
-
 
 p{
      color:whitesmoke;
 	font-size: 1.3rem;
 	}
 
-
-
 table{
 	font-size: 3rem;
 
 }
-
 
 .navbar-expand-lg {
 	background-color: rgba(73,7,97,0.7);
@@ -85,7 +68,6 @@ table{
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
 }
-
 .container-fluid{
 	    display: flex;
     flex-wrap: inherit;
@@ -93,11 +75,9 @@ table{
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-
 .header{
 	display:inline-block;
 }
-
 .row {
 	background-color: rgba(73,7,97,0.7);
     --bs-gutter-x: 1.5rem;
@@ -112,9 +92,6 @@ table{
     justify-content: space-evenly;
     align-items: center;
 }
-
-
-
 .col-12 {
     flex: 0 0 auto;
     width: 100%;
@@ -122,19 +99,10 @@ table{
     justify-content: space-evenly;
 }
 
-
-
-
 .caja{
 	display: inline-grid;
 	background-color: gray;
 }
-
-
-
-
-
-
 /*ABRE HEADER CAJA A LOGOS NOMBRE*/
 
 .cajaA{
@@ -142,24 +110,18 @@ table{
 	height:12rem ;
 	background-color:  rgba(73,7,97,0.7);
 }
-
 .caja_a{
 	display:flex;
 	text-align: justify;
 	justify-content: space-between;
 	justify-items: center;
 } 
-
 .caja_contacto1{
 	display: inline-block;
       background-color: rgba(73,7,97,0.7);
       margin: 1rem;
       text-align: center;
 }
-
-
-
-
 .nombremomo{
 display:inline;
 background-color:transparent;
@@ -168,10 +130,6 @@ height: 12rem;
 justify-items: baseline;
 align-items: baseline;
 }
-
-
-
-
 .logomomo{
 	background-color: transparent;
 	display:inline-flex;
@@ -200,29 +158,19 @@ align-items: baseline;
 
 	cursor: pointer;
 	transition: transform 2s;}
-	
-            
-	
-            
-
-
-
-                     /*ABRE CAJA B ITEMS NAV */
+/*ABRE CAJA B ITEMS NAV */
 
 .cajaB{
 	display: flex;
 	justify-content: space-around;
 	background-color: transparent;
 }
-
 .caja_b{
 	display: flex;
 	text-align: center;
 	    
          font-size:18px;
-
 }
-
 .ini{
 	display: inline-flex;
 	list-style: none;
@@ -237,19 +185,13 @@ align-items: baseline;
 	align-self:stretch;
      
 }
-
 .ini:hover{
 	transform: translate(10px,12px);
 	cursor: pointer;}
 
+ /*CIERRA CAJA B*/
 
-
-              /*CIERRA CAJA B*/
-
-
-
-
-               /*ABRE CAJA C IMAGEN PRINCIPAL*/
+ /*ABRE CAJA C IMAGEN PRINCIPAL*/
 
 
 .cajaC{
@@ -260,8 +202,6 @@ align-items: baseline;
 	    justify-self: center;
 	    width: 70rem;
 }
-
-
 .venus__img{
 	   display: flex;
 	   margin: 2rem;
@@ -269,13 +209,7 @@ align-items: baseline;
 }
 
            /*CIERRA CAJA C*/
-
-
-
-
-
-
-            /*ABRE CAJA D QUIEN SOY*/
+  /*ABRE CAJA D QUIEN SOY*/
 
 .cajaD{
       background-color:rgba(73,7,97,0.7);
@@ -302,7 +236,6 @@ transition: 2s;
 	cursor: pointer;
 	transition: transform 4s;}
 
-
 .esteban{
 	animation-name:esteban;
 	animation-duration: 4s;
@@ -318,8 +251,6 @@ transition: 2s;
 	80%{background: #ECEF0B;}
 	100%{background: #3B0551 ;}
 }
-
-
 
 .quiensoy1{
 	display:flex;
@@ -354,7 +285,6 @@ transition: 2s;
 	100%{background: #3B0551 ;}
 }
 
-
 .textRed{
 	background-color: red;
 }
@@ -370,9 +300,7 @@ transition: 2s;
 
  /*CIERRA CAJA D*/
 
-
-
- /*ABRE CAJA E TRABAJOS*/
+/*ABRE CAJA E TRABAJOS*/
 
 .cajaE{
 	display:flex;
@@ -396,12 +324,6 @@ transition: 2s;
 
 /*CIERRA CAJA E*/
 
-
-
-
-
-
-
 /*ABRE CAJA F PROMOS */
 
 .cajaF{
@@ -420,11 +342,7 @@ transition: 2s;
     justify-content: space-around;
 }
  
-
-
-
- /*ABRE CAJA G FORMULARIO CONTACTO */
-
+/*ABRE CAJA G FORMULARIO CONTACTO */
 
 .caja_contacto{
 	display:flex;
@@ -433,15 +351,11 @@ transition: 2s;
 	background-color: rgba(73,7,97,0.7);
 
 }
-
 .cajaG{
 	display: inline-flex;
 	text-align: center;
 }
 
-
-
- 
  /*ABRE CAJA H MAPA INFO INDEX */
 
 .cajaI{
@@ -455,21 +369,13 @@ background-color:  rgba(73,7,97,0.7);
 
 }
 
-
- /*ABRE CAJA J REDES */
-
 .cajaJ{
 	
     flex-direction: column;
     text-align: center;
 }
 
-
-
-
-
-
- /*QUERIESSr*/
+/*QUERIESSr*/
 
 /*parrafos querie 320*/
 
@@ -493,8 +399,6 @@ background-color:  rgba(73,7,97,0.7);
 .parr1{
  	font-size: 5rem;
  }
-
-
 
 /*CAJA E QUERIES*/
 
@@ -558,8 +462,7 @@ background-color:  rgba(73,7,97,0.7);
 
 /*----------------------------------------------*/
 
-	
-/*parrafos querie 480 a 719*/
+	/*parrafos querie 480 a 719*/
 
 @media screen and (min-width:480px) and (max-width:719px){
 
