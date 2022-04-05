@@ -1,0 +1,29 @@
+{
+  "name": "momodeusproyect",
+  "version": "1.0.0",
+  "description": "coderhouse trabajos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",  
+   "build-css": 
+   "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+   "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+
+
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EstebanGodoy86/mi_repositorio.git"
+  },
+  "author": "esteban godoy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EstebanGodoy86/mi_repositorio/issues"
+  },
+  "homepage": "https://github.com/EstebanGodoy86/mi_repositorio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}
