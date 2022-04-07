@@ -1,64 +1,59 @@
-
-
-html{
-      margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-     display: inline-grid;
-	background-image: url(../imagenes/carnevale.jpg);
+body {
+    display: inline-grid;
+    background-image: url(../imagenes/carnevale.jpg);
 }
 
-a{
-	color: white;
-	text-decoration-line: none;
-	padding: 3rem;
-	width: auto;
+a {
+    color: white;
+    text-decoration-line: none;
+    padding: 3rem;
+    width: auto;
 }
 
-h1{
-	
-	text-align: center;
-	color:yellow;
+h1 {
+    text-align: center;
+    color: yellow;
 }
 
-h2{
-	text-align: center;
+h2 {
+    text-align: center;
 }
 
-h3{
-	text-align: center;
-	color: white;
+h3 {
+    text-align: center;
+    color: white;
 }
 
-legend{
-	color:white;
+legend {
+    color: white;
 }
 
-label{
-	color: white;
+label {
+    color: white;
 }
 
-p{
-     color:whitesmoke;
-	font-size: 1.3rem;
-	}
+p {
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
 
-table{
-	font-size: 3rem;
-
+table {
+    font-size: 3rem;
 }
 
 .navbar-expand-lg {
-	background-color: rgba(73,7,97,0.7);
+    background-color: rgba(73, 7, 97, 0.7);
     flex-wrap: nowrap;
     justify-content: flex-start;
-
 }
-.navbar {
 
+.navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -68,18 +63,21 @@ table{
     padding-bottom: 0.5rem;
     margin-bottom: 2rem;
 }
-.container-fluid{
-	    display: flex;
+
+.container-fluid {
+    display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
 }
-.header{
-	display:inline-block;
+
+.header {
+    display: inline-block;
 }
+
 .row {
-	background-color: rgba(73,7,97,0.7);
+    background-color: rgba(73, 7, 97, 0.7);
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -92,584 +90,535 @@ table{
     justify-content: space-evenly;
     align-items: center;
 }
-.col-12 {
-    flex: 0 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-}
 
-.caja{
-	display: inline-grid;
-	background-color: gray;
-}
+
 /*ABRE HEADER CAJA A LOGOS NOMBRE*/
 
-.cajaA{
-	display:block;
-	height:12rem ;
-	background-color:  rgba(73,7,97,0.7);
+.caja_contacto1 {
+    display: inline-block;
+    background-color: rgba(73, 7, 97, 0.7);
+    margin: 1rem;
+    text-align: center;
 }
-.caja_a{
-	display:flex;
-	text-align: justify;
-	justify-content: space-between;
-	justify-items: center;
-} 
-.caja_contacto1{
-	display: inline-block;
-      background-color: rgba(73,7,97,0.7);
-      margin: 1rem;
-      text-align: center;
+
+.nombremomo {
+    display: inline;
+    background-color: transparent;
+    width: 25rem;
+    height: 12rem;
+    justify-items: baseline;
+    align-items: baseline;
 }
-.nombremomo{
-display:inline;
-background-color:transparent;
-width: 25rem;
-height: 12rem;
-justify-items: baseline;
-align-items: baseline;
+
+.momodeus {
+    background-color: transparent;
+    display: inline-flex;
+    width: 12rem;
+    height: 12rem;
 }
-.logomomo{
-	background-color: transparent;
-	display:inline-flex;
-	width: 12rem;
-	height: 12rem;}
+
 
 /*transformacion*/
 
-.nombremomo:hover{
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotatey(360deg);
-     cursor: pointer;
-	transition: transform 2s;
+.nombremomo:hover {
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: transform 2s;
+    -webkit-transform: rotatey(360deg);
+    -moz-transform: rotatey(360deg);
+    -ms-transform: rotatey(360deg);
+    -o-transform: rotatey(360deg);
 }
+
 
 /* carrousel */
-.logomomo:hover{
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotatey(360deg);
 
-	cursor: pointer;
-	transition: transform 2s;}
+.momodeus:hover {
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+
 /*ABRE CAJA B ITEMS NAV */
 
-.cajaB{
-	display: flex;
-	justify-content: space-around;
-	background-color: transparent;
-}
-.caja_b{
-	display: flex;
-	text-align: center;
-	    
-         font-size:18px;
-}
-.ini{
-	display: inline-flex;
-	list-style: none;
-	justify-items: center;
-	border-radius: 1rem;
-	background-color: rgba(246,232,0, 0.7);
-	flex-direction: row;
-	color: white;
-	font-family:  'Righteous', cursive;
-	font-size:1.6rem;
-	text-decoration-line: none;
-	align-self:stretch;
-     
-}
-.ini:hover{
-	transform: translate(10px,12px);
-	cursor: pointer;}
 
- /*CIERRA CAJA B*/
-
- /*ABRE CAJA C IMAGEN PRINCIPAL*/
+/*CIERRA CAJA B*/
 
 
-.cajaC{
-	    display: inline-flex;
-	    margin: 1rem;
-	    background: radial-gradient(#F8A521,#F2D409,#651773);
-	    justify-content: center;
-	    justify-self: center;
-	    width: 70rem;
-}
-.venus__img{
-	   display: flex;
-	   margin: 2rem;
-	   justify-items: center;
+/*ABRE CAJA C IMAGEN PRINCIPAL*/
+
+.cajaC {
+    display: inline-flex;
+    margin: 1rem;
+    background: radial-gradient(#F8A521, #F2D409, #651773);
+    justify-content: center;
+    justify-self: center;
+    width: 70rem;
 }
 
-           /*CIERRA CAJA C*/
-  /*ABRE CAJA D QUIEN SOY*/
-
-.cajaD{
-      background-color:rgba(73,7,97,0.7);
-      margin: 1rem;	
+.venus__img {
+    display: flex;
+    margin: 2rem;
+    justify-items: center;
 }
 
-.cajaD:hover{
-	box-shadow:sombra de caja: 15px 57px 69px -9px rgba(0,0,0,0.68);
--webkit-caja-sombra: 15px 57px 69px -9px rgba(0,0,0,0.68);
--moz-caja-sombra: 15px 57px 69px -9px rgba(0,0,0,0.68); ;
-transform: skew(10deg);
-cursor: pointer;
-transition: 2s;
+
+/*CIERRA CAJA C*/
+
+
+/*ABRE CAJA D QUIEN SOY*/
+
+.cajaD {
+    background-color: rgba(73, 7, 97, 0.7);
+    margin: 1rem;
 }
+
+.cajaD:hover {
+    box-shadow: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
+    -webkit-caja-sombra: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
+    -moz-caja-sombra: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
+    transform: skew(10deg);
+    cursor: pointer;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+}
+
 
 /*carrousel esteban*/
-.esteban:hover{
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotateX(45deg);
-	transform: rotatey(360deg);
 
-	cursor: pointer;
-	transition: transform 4s;}
-
-.esteban{
-	animation-name:esteban;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+.esteban:hover {
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: transform 4s;
 }
 
-	@keyframes esteban{
-	0%{background: #3B0551;}
-	20%{background:#3B0551 ;}
-	40%{background: #ECEF0B;}
-	60%{background: #3B0551 ;}
-	80%{background: #ECEF0B;}
-	100%{background: #3B0551 ;}
+.esteban {
+    animation-name: esteban;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
-.quiensoy1{
-	display:flex;
-	border-radius: 6rem;
-	background-color:rgba(73,7,97,0.7);
-	justify-content: center;
-}
-.parrafo1{
-	background-color:transparent;
-	display: grid;
-	grid-template-columns: 30% 30%;
-	grid-template-areas: 3fr;
-	grid-template-areas: 10fr;
-	justify-content: center;
-
-}
-
-.parr2{
-	background: violet;
-	animation-name: parr2animated;
-	animation-duration: 4s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+@keyframes esteban {
+    0% {
+        background: #3B0551;
+    }
+    20% {
+        background: #3B0551;
+    }
+    40% {
+        background: #ECEF0B;
+    }
+    60% {
+        background: #3B0551;
+    }
+    80% {
+        background: #ECEF0B;
+    }
+    100% {
+        background: #3B0551;
+    }
 }
 
-@keyframes parr2animated{
-	0%{background: #C68EDB;}
-	20%{background:#3B0551 ;}
-	40%{background:#C68EDB;}
-	60%{background: #3B0551 ;}
-	80%{background:#C68EDB;}
-	100%{background: #3B0551 ;}
+.quiensoy1 {
+    display: flex;
+    border-radius: 6rem;
+    background-color: rgba(73, 7, 97, 0.7);
+    justify-content: center;
 }
 
-.textRed{
-	background-color: red;
+.parrafo1 {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-areas: 3fr;
+    grid-template-areas: 10fr;
+    justify-content: center;
 }
 
-.esteban{
-	display: flex;
-    background-color: rgba(73,7,97,0.7);
+.parr2 {
+    background: violet;
+    animation-name: parr2animated;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes parr2animated {
+    0% {
+        background: #C68EDB;
+    }
+    20% {
+        background: #3B0551;
+    }
+    40% {
+        background: #C68EDB;
+    }
+    60% {
+        background: #3B0551;
+    }
+    80% {
+        background: #C68EDB;
+    }
+    100% {
+        background: #3B0551;
+    }
+}
+
+.textRed {
+    background-color: red;
+}
+
+.esteban {
+    display: flex;
+    background-color: rgba(73, 7, 97, 0.7);
     justify-content: center;
     border-radius: 150rem;
     width: 30rem;
     justify-self: center;
 }
 
- /*CIERRA CAJA D*/
 
 /*ABRE CAJA E TRABAJOS*/
 
-.cajaE{
-	display:flex;
+.cajaE {
+    display: flex;
     flex-direction: column;
-    background-color:rgba(73,7,97,0.7);;
+    background-color: rgba(73, 7, 97, 0.7);
+    ;
     align-items: center;
 }
-    
-}
-.caja_e-e{
-	display: grid; 
-	grid-template-columns: 50% 50%;
-	justify-items: center;
-	
-}
-.mg{
-	display:flex;
-	margin: 1rem;
 
+.caja_e-e {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
 }
+
+.mg {
+    display: flex;
+    margin: 1rem;
+}
+
 
 /*CIERRA CAJA E*/
 
+
 /*ABRE CAJA F PROMOS */
 
-.cajaF{
-   background-color:brown ;	
+.cajaF {
+    background-color: brown;
 }
 
-.cajaF{
-	margin: 3rem;
-	background-color:rgba(73,7,97,0.7);
-     
-} 
+.cajaF {
+    margin: 3rem;
+    background-color: rgba(73, 7, 97, 0.7);
+}
 
-.pro{
-	background-color: white;
-	display: flex;
+.pro {
+    background-color: white;
+    display: flex;
     justify-content: space-around;
 }
- 
+
+
 /*ABRE CAJA G FORMULARIO CONTACTO */
 
-.caja_contacto{
-	display:flex;
-	margin: 1rem;
-	justify-content: space-around;
-	background-color: rgba(73,7,97,0.7);
-
-}
-.cajaG{
-	display: inline-flex;
-	text-align: center;
+.caja_contacto {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+    background-color: rgba(73, 7, 97, 0.7);
 }
 
- /*ABRE CAJA H MAPA INFO INDEX */
-
-.cajaI{
-background-color:  rgba(73,7,97,0.7);
-}
-.cajaH_A{
-	display: inline-block;
-	text-align: center;
-	background-color: rgba(73,7,97,0.7);
-	margin: 1rem;
-
+.cajaG {
+    display: inline-flex;
+    text-align: center;
 }
 
-.cajaJ{
-	
+
+/*ABRE CAJA H MAPA INFO INDEX */
+
+.cajaI {
+    background-color: rgba(73, 7, 97, 0.7);
+}
+
+.cajaH_A {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(73, 7, 97, 0.7);
+    margin: 1rem;
+}
+
+.cajaJ {
     flex-direction: column;
     text-align: center;
 }
 
+
 /*QUERIESSr*/
+
 
 /*parrafos querie 320*/
 
-@media screen and (min-width:320px) and (max-width:479px){
-
-.ini{
-	display:block;
-	max-height: 5rem;
-	font-size: 3rem;
-}
-
-/*CAJA B QUERIES*/
-
-.caja_b{
-	display: block;
-}
-
-.quiensoy{
-           font-size: 9rem;
- }
-.parr1{
- 	font-size: 5rem;
- }
-
-/*CAJA E QUERIES*/
-
-.cajaee{
- 	font-size: 9rem;
- }
- .mg{
- 	display:inline-flex;
- 	margin: 3rem;
- 	margin: none;
-}
-.promos{
-	  font-size: 9rem;
-}
-
-.caja_contacto{
-	display: inline-block;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-
-.contact{
+@media screen and (min-width:320px) and (max-width:479px) {
+    .ini {
+        display: block;
+        max-height: 5rem;
+        font-size: 3rem;
+    }
+    /*CAJA B QUERIES*/
+    .caja_b {
+        display: block;
+    }
+    .quiensoy {
         font-size: 9rem;
-}
-.contacto{
-	display: inline-block;
-	justify-content:center;
-}
-.visita{
-	    font-size: 9rem;
+    }
+    .parr1 {
+        font-size: 5rem;
+    }
+    /*CAJA E QUERIES*/
+    .cajaee {
+        font-size: 9rem;
+    }
+    .mg {
+        display: inline-flex;
+        margin: 3rem;
+        margin: none;
+    }
+    .promos {
+        font-size: 9rem;
+    }
+    .caja_contacto {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact {
+        font-size: 9rem;
+    }
+    .contacto {
+        display: inline-block;
+        justify-content: center;
+    }
+    .visita {
+        font-size: 9rem;
+    }
+    /*CAJA I QUERIES*/
+    .cajaI {
+        display: inline-block;
+        text-align: center;
+    }
+    /*CAJA J QUERIES*/
+    .cajaJ {
+        display: inline-flex;
+        text-align: centerS;
+        font-size: 4rem;
+    }
+    .info {
+        font-size: 9rem;
+    }
+    .h3 {
+        font-size: 3rem;
+    }
+    .derechos {
+        font-size: 3rem;
+    }
 }
 
-/*CAJA I QUERIES*/
-
-.cajaI{
-	display: inline-block;
-	text-align: center;
-}
-
-
-/*CAJA J QUERIES*/
-
-.cajaJ{
-       display: inline-flex;
-     text-align: centerS;
-       font-size: 4rem;
-}
-
-.info{
-	font-size: 9rem;
-}
-
-.h3{
-	font-size: 3rem;
-}
-.derechos{
-	font-size: 3rem;
-}
-}
 
 /*----------------------------------------------*/
 
-	/*parrafos querie 480 a 719*/
 
-@media screen and (min-width:480px) and (max-width:719px){
+/*parrafos querie 480 a 719*/
 
-.ini{
-	display:block;
-	max-height: 4rem;
-	font-size: 2rem;
-}
-
-/*CAJA B QUERIES*/
-
-.caja_b{
-	display: block;
-}
-.quiensoy{
-           font-size: 7rem;
- }
-.parr1{
- 	font-size: 3rem;
- }
-
-
-/*CAJA E QUERIES*/
-
-.cajaee{
- 	font-size: 7rem;
- }
- .mg{
- 	display:inline-flex;
- 	margin: 3rem;
- 	margin: none;
-}
-.promos{
-	  font-size: 7rem;
-}
-
-.caja_contacto{
-	display: inline-block;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-.contact{
+@media screen and (min-width:480px) and (max-width:719px) {
+    .ini {
+        display: block;
+        max-height: 4rem;
+        font-size: 2rem;
+    }
+    /*CAJA B QUERIES*/
+    .caja_b {
+        display: block;
+    }
+    .quiensoy {
         font-size: 7rem;
-}
-.contacto{
-	display: inline-block;
-	justify-content:center;
-}
-.visita{
-	    font-size: 7rem;
+    }
+    .parr1 {
+        font-size: 3rem;
+    }
+    /*CAJA E QUERIES*/
+    .cajaee {
+        font-size: 7rem;
+    }
+    .mg {
+        display: inline-flex;
+        margin: 3rem;
+        margin: none;
+    }
+    .promos {
+        font-size: 7rem;
+    }
+    .caja_contacto {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact {
+        font-size: 7rem;
+    }
+    .contacto {
+        display: inline-block;
+        justify-content: center;
+    }
+    .visita {
+        font-size: 7rem;
+    }
+    /*CAJA I QUERIES*/
+    .cajaI {
+        display: inline-block;
+        text-align: center;
+    }
+    /*CAJA J QUERIES*/
+    .cajaJ {
+        display: inline-flex;
+        text-align: centerS;
+        font-size: 3rem;
+    }
+    .info {
+        font-size: 7rem;
+    }
+    .h3 {
+        font-size: 2rem;
+    }
+    .derechos {
+        font-size: 2rem;
+    }
 }
 
-/*CAJA I QUERIES*/
-
-.cajaI{
-	display: inline-block;
-	text-align: center;
-}
-
-/*CAJA J QUERIES*/
-
-.cajaJ{
-       display: inline-flex;
-     text-align: centerS;
-       font-size: 3rem;
-}
-.info{
-	font-size: 7rem;
-}
-
-.h3{
-	font-size: 2rem;
-}
-.derechos{
-	font-size: 2rem;
-}
-}
 
 /*------------------------------------*/
 
+
 /*parrafos querie 768 900*/
-@media screen and (min-width:768px) and (max-width:900px){
 
-.ini{
-	display:block;
-	max-height: 4rem;
-	font-size: 2rem;
-
-}
-
-/*CAJA B QUERIES*/
-
-.caja_b{
-	display: block;
-
-}
-
-.quiensoy{
-           font-size: 5rem;
- }
- .parr1{
- 	font-size: 3rem;
- }
-
-/*CAJA E QUERIES*/
-
-.cajaee{
- 	font-size: 5rem;
- 	
- }
-
-.mg{
- 	display:inline-flex;
- 	
-}
-.promos{
-	  font-size: 5rem;
-}
-
-.caja_contacto{
-	display: inline-block;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-}
-
-.contact{
+@media screen and (min-width:768px) and (max-width:900px) {
+    .ini {
+        display: block;
+        max-height: 4rem;
+        font-size: 2rem;
+    }
+    /*CAJA B QUERIES*/
+    .caja_b {
+        display: block;
+    }
+    .quiensoy {
         font-size: 5rem;
-}
-.contacto{
-	display: inline-block;
-	justify-content:center;
-}
-.visita{
-	    font-size: 5rem;
-}
-
-/*CAJA I QUERIES*/
-
-.cajaI{
-	display: inline-block;
-	text-align: center;
-}
-
-.cajaJ{
-       display: inline-flex;
-     text-align: centerS;
-       font-size: 3rem;
-}
-.mapa{
-	width: 70rem;
-	max-height: 30rem;
-}
-
-.info{
-	font-size: 5rem;
-}
-
-.h3{
-	font-size: 2rem;
-}
-.derechos{
-	font-size: 2rem;
-}
+    }
+    .parr1 {
+        font-size: 3rem;
+    }
+    /*CAJA E QUERIES*/
+    .cajaee {
+        font-size: 5rem;
+    }
+    .mg {
+        display: inline-flex;
+    }
+    .promos {
+        font-size: 5rem;
+    }
+    .caja_contacto {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact {
+        font-size: 5rem;
+    }
+    .contacto {
+        display: inline-block;
+        justify-content: center;
+    }
+    .visita {
+        font-size: 5rem;
+    }
+    /*CAJA I QUERIES*/
+    .cajaI {
+        display: inline-block;
+        text-align: center;
+    }
+    .cajaJ {
+        display: inline-flex;
+        text-align: centerS;
+        font-size: 3rem;
+    }
+    .mapa {
+        width: 70rem;
+        max-height: 30rem;
+    }
+    .info {
+        font-size: 5rem;
+    }
+    .h3 {
+        font-size: 2rem;
+    }
+    .derechos {
+        font-size: 2rem;
+    }
 }
 
 
 /*media queries quiensoy.hrtml logo coderhuse*/
 
-@media screen and (min-width:320px) and (max-width:479px){
-
-.parrafo1.ini{
-	display:block;
-	max-height: 5rem;
-	font-size: 3rem;
-
+@media screen and (min-width:320px) and (max-width:479px) {
+    .parrafo1.ini {
+        display: block;
+        max-height: 5rem;
+        font-size: 3rem;
+    }
+    .parrafo1.quiensoy1 {
+        font-size: 5rem;
+    }
+    .parrafo1.parr1 {
+        font-size: 3rem;
+    }
+    .caja_b {
+        display: block;
+        justify-items: stretch;
+    }
+    .info {
+        font-size: 5rem;
+    }
+    .h3 {
+        font-size: 3rem;
+    }
+    .derechos {
+        font-size: 3rem;
+    }
+    .cajaJ {
+        display: inline-flex;
+        text-align: centerS;
+        font-size: 1rem;
+    }
 }
-.parrafo1.quiensoy1{
-           font-size: 5rem;
- }
- .parrafo1.parr1{
- 	font-size: 3rem;
- }
-
-
-.caja_b{
-	display: block;
-	justify-items: stretch;
-}
-.info{
-	font-size: 5rem;
-}
-
-.h3{
-	font-size: 3rem;
-}
-.derechos{
-	font-size: 3rem;
-}
-.cajaJ{
-       display: inline-flex;
-     text-align: centerS;
-       font-size: 1rem;
-}
-}
-
-
-}
-

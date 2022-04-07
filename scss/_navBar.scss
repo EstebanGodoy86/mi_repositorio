@@ -1,0 +1,68 @@
+                                        html {
+                                            margin: 0;
+                                            padding: 0;
+                                            box-sizing: border-box;
+                                            body {
+                                                display: inline-grid;
+                                                background-image: url(../imagenes/carnevale.jpg);
+                                                header {
+                                                    .header {
+                                                        display: inline-block;
+                                                        .navbar-expand-lg {
+                                                            background-color: rgba(73, 7, 97, 0.7);
+                                                            flex-wrap: nowrap;
+                                                            justify-content: flex-start;
+                                                            .container-fluid {
+                                                                display: flex;
+                                                                flex-wrap: inherit;
+                                                                align-items: center;
+                                                                justify-content: space-between;
+                                                                flex-direction: row-reverse;
+                                                                .momodeus {
+                                                                    background-color: transparent;
+                                                                    display: inline-flex;
+                                                                    width: 12rem;
+                                                                    height: 12rem;
+                                                                    .nombremomo {
+                                                                        display: inline;
+                                                                        background-color: transparent;
+                                                                        width: 25rem;
+                                                                        height: 12rem;
+                                                                        justify-items: baseline;
+                                                                        align-items: baseline;
+                                                                        &.nombremomo:hover {
+                                                                            transform: rotateX(45deg);
+                                                                            transform: rotateX(45deg);
+                                                                            transform: rotateX(45deg);
+                                                                            transform: rotateX(45deg);
+                                                                            transform: rotatey(360deg);
+                                                                            cursor: pointer;
+                                                                            transition: transform 2s;
+                                                                            -webkit-transform: rotatey(360deg);
+                                                                            -moz-transform: rotatey(360deg);
+                                                                            -ms-transform: rotatey(360deg);
+                                                                            -o-transform: rotatey(360deg);
+                                                                            .momodeus {
+                                                                                background-color: transparent;
+                                                                                display: inline-flex;
+                                                                                width: 12rem;
+                                                                                height: 12rem;
+                                                                                &.momodeus:hover {
+                                                                                    transform: rotateX(45deg);
+                                                                                    transform: rotateX(45deg);
+                                                                                    transform: rotateX(45deg);
+                                                                                    transform: rotateX(45deg);
+                                                                                    transform: rotatey(360deg);
+                                                                                    cursor: pointer;
+                                                                                    transition: transform 2s;
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }

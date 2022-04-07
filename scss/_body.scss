@@ -1,0 +1,175 @@
+.cajaC {
+    .cajaC {
+        display: inline-flex;
+        margin: 1rem;
+        background: radial-gradient(#F8A521, #F2D409, #651773);
+        justify-content: center;
+        justify-self: center;
+        width: 70rem;
+        .venus__img {
+            display: flex;
+            margin: 2rem;
+            justify-items: center;
+        }
+    }
+}
+
+.cajaD {
+    background-color: rgba(73, 7, 97, 0.7);
+    margin: 1rem;
+    &.cajaD:hover {
+        box-shadow: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
+        -webkit-caja-sombra: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
+        -moz-caja-sombra: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
+        transform: skew(10deg);
+        cursor: pointer;
+        transition: 2s;
+        -webkit-transition: 2s;
+        -moz-transition: 2s;
+        -ms-transition: 2s;
+        -o-transition: 2s;
+    }
+}
+
+.esteban {
+    .esteban {
+        display: flex;
+        background-color: rgba(73, 7, 97, 0.7);
+        justify-content: center;
+        border-radius: 150rem;
+        width: 30rem;
+        justify-self: center;
+        .esteban:hover {
+            transform: rotateX(45deg);
+            transform: rotateX(45deg);
+            transform: rotateX(45deg);
+            transform: rotateX(45deg);
+            transform: rotatey(360deg);
+            cursor: pointer;
+            transition: transform 4s;
+            @keyframes esteban {
+                0% {
+                    background: #3B0551;
+                }
+                20% {
+                    background: #3B0551;
+                }
+                40% {
+                    background: #ECEF0B;
+                }
+                60% {
+                    background: #3B0551;
+                }
+                80% {
+                    background: #ECEF0B;
+                }
+                100% {
+                    background: #3B0551;
+                }
+            }
+        }
+    }
+}
+
+.cajaD {
+    .quiensoy1 {
+        display: flex;
+        border-radius: 6rem;
+        background-color: rgba(73, 7, 97, 0.7);
+        justify-content: center;
+        .parrafo1 {
+            background-color: transparent;
+            display: grid;
+            grid-template-columns: 30% 30%;
+            grid-template-areas: 3fr;
+            grid-template-areas: 10fr;
+            justify-content: center;
+            .textRed {
+                background-color: red;
+                .parr2 {
+                    background: violet;
+                    animation-name: parr2animated;
+                    animation-duration: 4s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    @keyframes parr2animated {
+                        0% {
+                            background: #C68EDB;
+                        }
+                        20% {
+                            background: #3B0551;
+                        }
+                        40% {
+                            background: #C68EDB;
+                        }
+                        60% {
+                            background: #3B0551;
+                        }
+                        80% {
+                            background: #C68EDB;
+                        }
+                        100% {
+                            background: #3B0551;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cajaE {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(73, 7, 97, 0.7);
+    ;
+    align-items: center;
+    .caja_e-e {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: center;
+        .mg {
+            display: flex;
+            margin: 1rem;
+        }
+    }
+}
+
+.cajaF {
+    margin: 3rem;
+    background-color: rgba(73, 7, 97, 0.7);
+    .pro {
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.caja_contacto {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-around;
+    background-color: rgba(73, 7, 97, 0.7);
+    .cajaG {
+        display: inline-flex;
+        text-align: center;
+    }
+}
+
+.cajaH {
+    .cajaH_A {
+        display: inline-block;
+        text-align: center;
+        background-color: rgba(73, 7, 97, 0.7);
+        margin: 1rem;
+    }
+}
+
+.cajaI {
+    background-color: rgba(73, 7, 97, 0.7);
+}
+
+.cajaJ {
+    flex-direction: column;
+    text-align: center;
+}
