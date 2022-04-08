@@ -1,0 +1,149 @@
+                        @mixin fondos {
+                            background-color: rgba(73, 7, 97, 0.7);
+                        }
+                        
+                        html {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                            body {
+                                display: inline-grid;
+                                background-image: url(../imagenes/carnevale.jpg);
+                                a {
+                                    color: white;
+                                    text-decoration-line: none;
+                                    padding: 3rem;
+                                    width: auto;
+                                    h1 {
+                                        text-align: center;
+                                        color: yellow;
+                                        h2 {
+                                            text-align: center;
+                                            h3 {
+                                                text-align: center;
+                                                color: white;
+                                                legend {
+                                                    color: white;
+                                                    label {
+                                                        color: white;
+                                                        p {
+                                                            color: whitesmoke;
+                                                            font-size: 1.3rem;
+                                                            table {
+                                                                font-size: 3rem;
+                                                                header {
+                                                                    .header {
+                                                                        display: inline-block;
+                                                                        .navbar-expand-lg {
+                                                                            @include fondos;
+                                                                            flex-wrap: nowrap;
+                                                                            justify-content: flex-start;
+                                                                            .container-fluid {
+                                                                                display: flex;
+                                                                                flex-wrap: inherit;
+                                                                                align-items: center;
+                                                                                justify-content: space-between;
+                                                                                flex-direction: row-reverse;
+                                                                                .navbar {
+                                                                                    position: relative;
+                                                                                    display: flex;
+                                                                                    flex-wrap: wrap;
+                                                                                    align-items: center;
+                                                                                    justify-content: space-between;
+                                                                                    padding-top: 0.5rem;
+                                                                                    padding-bottom: 0.5rem;
+                                                                                    margin-bottom: 2rem;
+                                                                                    .nombremomo {
+                                                                                        display: inline;
+                                                                                        background-color: transparent;
+                                                                                        width: 25rem;
+                                                                                        height: 12rem;
+                                                                                        justify-items: baseline;
+                                                                                        align-items: baseline;
+                                                                                        &:hover {
+                                                                                            transform: rotateX(45deg);
+                                                                                            transform: rotateX(45deg);
+                                                                                            transform: rotateX(45deg);
+                                                                                            transform: rotateX(45deg);
+                                                                                            transform: rotatey(360deg);
+                                                                                            cursor: pointer;
+                                                                                            transition: transform 2s;
+                                                                                            .logomomo {
+                                                                                                -webkit-transform: rotateX(45deg);
+                                                                                                -moz-transform: rotateX(45deg);
+                                                                                                -ms-transform: rotateX(45deg);
+                                                                                                -o-transform: rotateX(45deg);
+                                                                                                background-color: transparent;
+                                                                                                display: inline-flex;
+                                                                                                width: 12rem;
+                                                                                                height: 12rem;
+                                                                                                &:hover {
+                                                                                                    transform: rotateX(45deg);
+                                                                                                    transform: rotateX(45deg);
+                                                                                                    transform: rotateX(45deg);
+                                                                                                    transform: rotateX(45deg);
+                                                                                                    transform: rotatey(360deg);
+                                                                                                    cursor: pointer;
+                                                                                                    transition: transform 2s;
+                                                                                                    .esteban {
+                                                                                                        animation-name: esteban;
+                                                                                                        animation-duration: 4s;
+                                                                                                        animation-timing-function: linear;
+                                                                                                        animation-iteration-count: infinite;
+                                                                                                        &:hover {
+                                                                                                            transform: rotateX(45deg);
+                                                                                                            transform: rotateX(45deg);
+                                                                                                            transform: rotateX(45deg);
+                                                                                                            transform: rotateX(45deg);
+                                                                                                            transform: rotatey(360deg);
+                                                                                                            cursor: pointer;
+                                                                                                            transition: transform 4s;
+                                                                                                            .esteban {
+                                                                                                                display: flex;
+                                                                                                                @include fondos;
+                                                                                                                justify-content: center;
+                                                                                                                border-radius: 150rem;
+                                                                                                                width: 30rem;
+                                                                                                                justify-self: center;
+                                                                                                                @keyframes esteban {
+                                                                                                                    0% {
+                                                                                                                        background: #3B0551;
+                                                                                                                    }
+                                                                                                                    20% {
+                                                                                                                        background: #3B0551;
+                                                                                                                    }
+                                                                                                                    40% {
+                                                                                                                        background: #ECEF0B;
+                                                                                                                    }
+                                                                                                                    60% {
+                                                                                                                        background: #3B0551;
+                                                                                                                    }
+                                                                                                                    80% {
+                                                                                                                        background: #ECEF0B;
+                                                                                                                    }
+                                                                                                                    100% {
+                                                                                                                        background: #3B0551;
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }

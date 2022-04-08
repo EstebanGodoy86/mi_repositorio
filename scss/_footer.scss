@@ -1,0 +1,16 @@
+.cajaI {
+    @include fondos;
+}
+
+//caja I 
+.cajaH_A {
+    display: inline-block;
+    text-align: center;
+    @include fondos;
+    margin: 1rem;
+}
+
+.cajaJ {
+    flex-direction: column;
+    text-align: center;
+}
