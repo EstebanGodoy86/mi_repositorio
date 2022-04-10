@@ -1,16 +1,20 @@
 .cajaI {
-    @include fondos;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @include Block;
+    .info {
+        @include titulos;
+        font-family: $tistyle;
+    }
 }
 
-//caja I 
-.cajaH_A {
-    display: inline-block;
-    text-align: center;
-    @include fondos;
-    margin: 1rem;
+.derechos {
+    color: white;
+    font-family: $tistyle;
 }
 
 .cajaJ {
-    flex-direction: column;
-    text-align: center;
+    font-style: $tistyle;
+    color: yellow;
 }

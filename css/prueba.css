@@ -1,71 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Lobster&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&display=swap");
 html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-html body {
-    display: inline-grid;
-    background-image: url(../imagenes/carnevale.jpg);
-}
+body {
+  display: inline-grid;
+  background-image: url(../imagenes/carnevale.jpg); }
 
-html body a {
-    color: white;
-    text-decoration-line: none;
-    padding: 3rem;
-    width: auto;
-}
-
-html body a h1 {
-    text-align: center;
-    color: yellow;
-}
-
-html body a h1 h2 {
-    text-align: center;
-}
-
-html body a h1 h2 h3 {
-    text-align: center;
-    color: white;
-}
-
-html body a h1 h2 h3 legend {
-    color: white;
-}
-
-html body a h1 h2 h3 legend label {
-    color: white;
-}
-
-html body a h1 h2 h3 legend label p {
-    color: whitesmoke;
-    font-size: 1.3rem;
-}
-
-html body a h1 h2 h3 legend label p table {
-    font-size: 3rem;
-}
-
-html body a h1 h2 h3 legend label p table header .header {
-    display: inline-block;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg {
-    background-color: rgba(73, 7, 97, 0.7);
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid {
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar {
+header .navbar-expand-lg {
+  background-color: rgba(73, 7, 97, 0.7);
+  flex-wrap: nowrap;
+  justify-content: flex-start; }
+  header .navbar-expand-lg .navbar {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -73,239 +24,150 @@ html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .cont
     justify-content: space-between;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-bottom: 2rem;
-}
+    margin-bottom: 2rem; }
+    header .navbar-expand-lg .navbar .container-fluid {
+      display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row-reverse; }
 
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar .nombremomo {
+header .momodeus {
+  background-color: transparent;
+  display: inline-flex;
+  width: 12rem;
+  height: 12rem;
+  align-items: center;
+  justify-content: center; }
+  header .momodeus:hover {
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotateX(45deg);
+    transform: rotatey(360deg);
+    cursor: pointer;
+    transition: transform 2s; }
+  header .momodeus .nombremomo {
     display: inline;
     background-color: transparent;
     width: 25rem;
     height: 12rem;
     justify-items: baseline;
-    align-items: baseline;
-}
+    align-items: baseline; }
+    header .momodeus .nombremomo:hover {
+      transform: rotateX(45deg);
+      transform: rotateX(45deg);
+      transform: rotateX(45deg);
+      transform: rotateX(45deg);
+      transform: rotatey(360deg);
+      cursor: pointer;
+      transition: transform 2s; }
 
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar .nombremomo:hover {
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotatey(360deg);
-    cursor: pointer;
-    transition: transform 2s;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar .nombremomo:hover .logomomo {
-    -webkit-transform: rotateX(45deg);
-    -moz-transform: rotateX(45deg);
-    -ms-transform: rotateX(45deg);
-    -o-transform: rotateX(45deg);
-    background-color: transparent;
-    display: inline-flex;
-    width: 12rem;
-    height: 12rem;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar .nombremomo:hover .logomomo:hover {
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotatey(360deg);
-    cursor: pointer;
-    transition: transform 2s;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar .nombremomo:hover .logomomo:hover .esteban {
-    animation-name: esteban;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar .nombremomo:hover .logomomo:hover .esteban:hover {
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotateX(45deg);
-    transform: rotatey(360deg);
-    cursor: pointer;
-    transition: transform 4s;
-}
-
-html body a h1 h2 h3 legend label p table header .header .navbar-expand-lg .container-fluid .navbar .nombremomo:hover .logomomo:hover .esteban:hover .esteban {
-    display: flex;
-    background-color: rgba(73, 7, 97, 0.7);
-    justify-content: center;
-    border-radius: 150rem;
-    width: 30rem;
-    justify-self: center;
-}
-
-@keyframes esteban {
-    0% {
-        background: #3B0551;
-    }
-    20% {
-        background: #3B0551;
-    }
-    40% {
-        background: #ECEF0B;
-    }
-    60% {
-        background: #3B0551;
-    }
-    80% {
-        background: #ECEF0B;
-    }
-    100% {
-        background: #3B0551;
-    }
-}
-
-body .cajaB {
-    display: flex;
-    justify-content: space-around;
-    background-color: transparent;
-}
-
-body .cajaB .caja_b {
-    display: flex;
-    text-align: center;
-    font-size: 18px;
-}
-
-body .cajaC {
-    display: inline-flex;
-    margin: 1rem;
-    background: radial-gradient(#F8A521, #F2D409, #651773);
-    justify-content: center;
-    justify-self: center;
-    width: 70rem;
-}
-
-body .cajaC .venus__img {
+.cajaC {
+  display: inline-flex;
+  margin: 1rem;
+  background: radial-gradient(#F8A521, #F2D409, #651773);
+  justify-content: center;
+  justify-self: center;
+  width: 100%; }
+  .cajaC .venus__img {
     display: flex;
     margin: 2rem;
     justify-items: center;
-}
+    text-align: center; }
+    .cajaC .venus__img:hover {
+      transform: scale(1.4); }
 
-body .cajaD {
-    background-color: rgba(73, 7, 97, 0.7);
-    margin: 1rem;
-}
-
-body .cajaD:hover {
-    box-shadow: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
-    -webkit-caja-sombra: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
-    -moz-caja-sombra: 15px 57px 69px -9px rgba(0, 0, 0, 0.68);
-    transform: skew(10deg);
-    cursor: pointer;
-    transition: 2s;
-}
-
-body .cajaD:hover .quiensoy1 {
-    display: flex;
-    border-radius: 6rem;
-    background-color: rgba(73, 7, 97, 0.7);
-    justify-content: center;
-}
-
-body .cajaD:hover .quiensoy1 .parrafo1 {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: 30% 30%;
-    grid-template-areas: 3fr;
-    grid-template-areas: 10fr;
-    justify-content: center;
-}
-
-body .cajaD:hover .quiensoy1 .parrafo1 .parr2 {
-    background: violet;
-    animation-name: parr2animated;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes parr2animated {
-    0% {
-        background: #C68EDB;
-    }
-    20% {
-        background: #3B0551;
-    }
-    40% {
-        background: #C68EDB;
-    }
-    60% {
-        background: #3B0551;
-    }
-    80% {
-        background: #C68EDB;
-    }
-    100% {
-        background: #3B0551;
-    }
-}
-
-body .cajaE {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(73, 7, 97, 0.7);
-    align-items: center;
-}
-
-body .cajaE .caja_e-e {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-items: center;
-}
-
-body .cajaE .caja_e-e .mg {
-    display: flex;
-    margin: 1rem;
-}
-
-body .cajaF {
-    background-color: brown;
-}
-
-body .cajaF .cajaF {
-    margin: 3rem;
-    background-color: rgba(73, 7, 97, 0.7);
-}
-
-body .cajaF .cajaF .pro {
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-}
-
-body .caja_contacto {
-    display: flex;
-    margin: 1rem;
-    justify-content: space-around;
-    background-color: rgba(73, 7, 97, 0.7);
-}
-
-body .caja_contacto .cajaG {
-    display: inline-flex;
+.cajaD {
+  display: inline-block;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: rgba(73, 7, 97, 0.7); }
+  .cajaD .quiensoy {
     text-align: center;
-}
+    color: yellow;
+    font-family: "Bangers", cursive; }
+
+.parr1 {
+  color: white;
+  font-family: "Special Elite", cursive; }
+  .parr1 .textRed {
+    color: red;
+    background-color: #F2D409; }
+
+.cajaE {
+  text-align: -webkit-center;
+  margin: 2rem;
+  background-color: rgba(73, 7, 97, 0.7); }
+
+.cajaF {
+  background-color: rgba(73, 7, 97, 0.7); }
+  .cajaF .promos {
+    text-align: center;
+    color: yellow;
+    font-family: "Bangers", cursive; }
+
+.pro {
+  background-color: black; }
+
+tbody {
+  color: yellow;
+  font-size: 2rem; }
+
+.cajaG {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin: 2rem;
+  background-color: rgba(73, 7, 97, 0.7); }
+  .cajaG .contact {
+    text-align: center;
+    color: yellow;
+    font-family: "Bangers", cursive; }
+
+fieldset {
+  color: yellow;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+  fieldset label {
+    color: white; }
+
+textarea {
+  width: 60rem;
+  resize: vertical; }
+
+.cajaH {
+  text-align: center;
+  background-color: rgba(73, 7, 97, 0.7); }
+  .cajaH .visita {
+    text-align: center;
+    color: yellow;
+    font-family: "Bangers", cursive; }
+
+iframe {
+  width: 80rem;
+  border: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  iframe .derechos {
+    font-family: "Bangers", cursive; }
 
 .cajaI {
-    background-color: rgba(73, 7, 97, 0.7);
-}
-
-.cajaH_A {
-    display: inline-block;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  background-color: rgba(73, 7, 97, 0.7); }
+  .cajaI .info {
     text-align: center;
-    background-color: rgba(73, 7, 97, 0.7);
-    margin: 1rem;
-}
+    color: yellow;
+    font-family: "Bangers", cursive; }
+
+.derechos {
+  color: white;
+  font-family: "Bangers", cursive; }
 
 .cajaJ {
-    flex-direction: column;
-    text-align: center;
-}
+  font-style: "Bangers", cursive;
+  color: yellow; }
