@@ -3,6 +3,7 @@
 }
 
 header {
+    display: inline-block;
     .navbar-expand-lg {
         @include Block;
         flex-wrap: nowrap;

@@ -1,0 +1,117 @@
+body {
+    .cajaEsteban {
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        .esteban {
+            display: flex;
+            justify-content: center;
+            justify-self: center;
+            width: 30rem;
+            border-radius: 150rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            animation-name: esteban;
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            &:hover {
+                transform: rotateX(45deg);
+                transform: rotateX(45deg);
+                transform: rotateX(45deg);
+                transform: rotateX(45deg);
+                transform: rotatey(360deg);
+                cursor: pointer;
+                transition: transform 4s;
+                @keyframes esteban {
+                    0% {
+                        background: #3B0551;
+                    }
+                    20% {
+                        background: #3B0551;
+                    }
+                    40% {
+                        background: #ECEF0B;
+                    }
+                    60% {
+                        background: #3B0551;
+                    }
+                    80% {
+                        background: #ECEF0B;
+                    }
+                    100% {
+                        background: #3B0551;
+                    }
+                }
+            }
+        }
+    }
+    .quiensoy1 {
+        display: flex;
+        @include titulos;
+        font-family: $tistyle;
+        border-radius: 6rem;
+        background-color: rgba(73, 7, 97, 0.7);
+        justify-content: center;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+    }
+    .parrafo1 {
+        @include Block;
+        display: grid;
+        color: white;
+        font-size: 1.3rem;
+        grid-template-columns: 30% 30%;
+        grid-template-areas: 3fr;
+        grid-template-areas: 10fr;
+        justify-content: center;
+    }
+    .parr2 {
+        background: violet;
+        animation-name: parr2animated;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @keyframes parr2animated {
+            0% {
+                background: #C68EDB;
+            }
+            20% {
+                background: #3B0551;
+            }
+            40% {
+                background: #C68EDB;
+            }
+            60% {
+                background: #3B0551;
+            }
+            80% {
+                background: #C68EDB;
+            }
+            100% {
+                background: #3B0551;
+            }
+        }
+    }
+}
+
+.cajaI {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @include Block;
+    .info {
+        @include titulos;
+        font-family: $tistyle;
+    }
+    .derechos {
+        color: white;
+        font-family: $tistyle;
+    }
+    .cajaJ {
+        font-style: $tistyle;
+        color: yellow;
+    }
+}
