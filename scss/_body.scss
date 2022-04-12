@@ -40,8 +40,8 @@
         color: white;
         font-family: $h3style;
         .textRed {
-            color: red;
-            background-color: #F2D409;
+            color: map-get($map: $paletacolores, $key: 'cuatro');
+            background-color: map-get($map: $paletacolores, $key: 'tres');
         }
     }
     

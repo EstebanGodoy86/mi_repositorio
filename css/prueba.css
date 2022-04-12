@@ -7826,8 +7826,9 @@ body {
 header {
   display: inline-block; }
   header .navbar-expand-lg {
+    text-align: center;
     background-color: rgba(73, 7, 97, 0.7);
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start; }
     header .navbar-expand-lg .navbar {
       position: relative;
@@ -7844,6 +7845,14 @@ header {
         align-items: center;
         justify-content: space-between;
         flex-direction: row-reverse; }
+  header .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 2;
+    font-size: larger; }
   header .momodeus {
     background-color: none;
     display: inline-flex;
@@ -7873,7 +7882,11 @@ header {
         transform: rotateX(45deg);
         transform: rotatey(360deg);
         cursor: pointer;
-        transition: transform 2s; }
+        transition: transform 2s;
+        -webkit-transition: transform 2s;
+        -moz-transition: transform 2s;
+        -ms-transition: transform 2s;
+        -o-transition: transform 2s; }
 
 .cajaC {
   display: inline-flex;
@@ -7905,7 +7918,7 @@ header {
   font-family: "Special Elite", cursive; }
   .parr1 .textRed {
     color: red;
-    background-color: #F2D409; }
+    background-color: #efff0c; }
 
 .cajaE {
   text-align: -webkit-center;
