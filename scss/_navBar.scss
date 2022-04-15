@@ -1,77 +1,55 @@
-@mixin Block {
-    background-color: rgba(73, 7, 97, 0.7);
-}
-
-header {
-    display: inline-block;
-    .navbar-expand-lg {
-        text-align: center;
-        @include Block;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        .navbar {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-            .container-fluid {
-                display: flex;
-                flex-wrap: inherit;
-                align-items: center;
-                justify-content: space-between;
-                flex-direction: row-reverse;
+        @mixin Block {
+            background-color: rgba(73, 7, 97, 0.7);
+        }
+        
+        header {
+            display: inline-block;
+            .navbar-expand-lg {
+                text-align: center;
+                @include Block;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                .navbar {
+                    position: relative;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: flex-start;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    margin-bottom: 2rem;
+                    .container-fluid {
+                        display: flex;
+                        flex-wrap: inherit;
+                        align-items: center;
+                        justify-content: flex-start;
+                    }
+                    .navbar-nav {
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        list-style: none;
+                        font-size: 2;
+                        font-size: larger;
+                    }
+                    .momodeus {
+                        background-color: none;
+                        display: inline-flex;
+                        width: 20rem;
+                        height: 20rem;
+                        align-items: center;
+                        justify-content: center;
+                        &:hover {
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotatey(360deg);
+                            cursor: pointer;
+                            transition: transform 2s;
+                        }
+                    }
+                }
             }
         }
-    }
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-        font-size: 2;
-        font-size: larger;
-    }
-    .momodeus {
-        background-color: none;
-        display: inline-flex;
-        width: 12rem;
-        height: 12rem;
-        align-items: center;
-        justify-content: center;
-        &:hover {
-            transform: rotateX(45deg);
-            transform: rotateX(45deg);
-            transform: rotateX(45deg);
-            transform: rotateX(45deg);
-            transform: rotatey(360deg);
-            cursor: pointer;
-            transition: transform 2s;
-        }
-        .nombremomo {
-            display: inline;
-            background-color: transparent;
-            width: 25rem;
-            height: 12rem;
-            justify-items: baseline;
-            align-items: baseline;
-            &:hover {
-                transform: rotateX(45deg);
-                transform: rotateX(45deg);
-                transform: rotateX(45deg);
-                transform: rotateX(45deg);
-                transform: rotatey(360deg);
-                cursor: pointer;
-                transition: transform 2s;
-                -webkit-transition: transform 2s;
-                -moz-transition: transform 2s;
-                -ms-transition: transform 2s;
-                -o-transition: transform 2s;
-            }
-        }
-    }
-}

@@ -1,26 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&display=swap');
-$parrstyle:'Lobster',
-cursive;
-$h3style: 'Baloo 2',
-cursive;
-$paletacolores:('uno': rgb(42,
-2,
-42),
-'dos' :rgb(252,
-252,
-252),
-'tres' :rgb(239,
-255,
-12),
-'cuatro': rgb(255,
-0,
-0),
-'cinco' :rgb(249,
-138,
-249),
-'seis' :rgb(244,
-206,
-244),
-);
-//no tengo en que usar map-get pero dejo unos ejemplos//
+                            @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+                            @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&display=swap');
+                            $parrstyle:'Lobster',
+                            cursive;
+                            $h3style: 'Baloo 2',
+                            cursive;
+                            $paletacolores:('uno': rgb(42,
+                            2,
+                            42),
+                            'dos' :rgb(252,
+                            252,
+                            252),
+                            'tres' :rgb(239,
+                            255,
+                            12),
+                            'cuatro': rgb(255,
+                            0,
+                            0),
+                            'cinco' :rgb(60,
+                            6,
+                            239),
+                            'seis' :rgb(235,
+                            86,
+                            11),
+                            );
