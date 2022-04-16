@@ -1,55 +1,76 @@
-        @mixin Block {
-            background-color: rgba(73, 7, 97, 0.7);
-        }
-        
-        header {
-            display: inline-block;
-            .navbar-expand-lg {
-                text-align: center;
-                @include Block;
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                .navbar {
-                    position: relative;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    justify-content: flex-start;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    margin-bottom: 2rem;
-                    .container-fluid {
-                        display: flex;
-                        flex-wrap: inherit;
-                        align-items: center;
+                @mixin Block {
+                    background-color: rgba(73, 7, 97, 0.7);
+                }
+                
+                header {
+                    .navbar-expand-lg {
+                        text-align: center;
+                        @include Block;
+                        flex-wrap: wrap;
                         justify-content: flex-start;
-                    }
-                    .navbar-nav {
-                        display: flex;
-                        flex-direction: row;
-                        padding-left: 0;
-                        margin-bottom: 0;
-                        list-style: none;
-                        font-size: 2;
-                        font-size: larger;
-                    }
-                    .momodeus {
-                        background-color: none;
-                        display: inline-flex;
-                        width: 20rem;
-                        height: 20rem;
-                        align-items: center;
-                        justify-content: center;
-                        &:hover {
-                            transform: rotateX(45deg);
-                            transform: rotateX(45deg);
-                            transform: rotateX(45deg);
-                            transform: rotateX(45deg);
-                            transform: rotatey(360deg);
-                            cursor: pointer;
-                            transition: transform 2s;
+                        font-size: 1rem;
+                        .navbar {
+                            position: relative;
+                            display: inline-flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: flex-start;
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                            margin-bottom: 2rem;
+                            .container-fluid {
+                                display: flex;
+                                flex-wrap: inherit;
+                                align-items: center;
+                                justify-content: flex-start;
+                            }
+                            .navbar-nav {
+                                display: flex;
+                                flex-direction: row;
+                                padding-left: 0;
+                                margin-bottom: 0;
+                                list-style: none;
+                                font-size: 2rem;
+                                font-size: larger;
+                            }
+                            .navbar-collapse {
+                                display: flex!important;
+                                flex-basis: auto;
+                            }
+                            .momodeus {
+                                background-color: none;
+                                display: inline-flex;
+                                width: 20rem;
+                                height: 20rem;
+                                align-items: center;
+                                justify-content: center;
+                                &:hover {
+                                    transform: rotateX(45deg);
+                                    transform: rotateX(45deg);
+                                    transform: rotateX(45deg);
+                                    transform: rotateX(45deg);
+                                    transform: rotatey(360deg);
+                                    cursor: pointer;
+                                    transition: transform 2s;
+                                }
+                            }
+                            .nombremomo {
+                                background-color: none;
+                                display: inline-flex;
+                                width: 400rem;
+                                height: 100rem;
+                                align-items: center;
+                                justify-content: center;
+                                &:hover {
+                                    transform: rotateX(45deg);
+                                    transform: rotateX(45deg);
+                                    transform: rotateX(45deg);
+                                    transform: rotateX(45deg);
+                                    transform: rotatey(360deg);
+                                    cursor: pointer;
+                                    transition: transform 2s;
+                                }
+                            }
                         }
                     }
                 }
-            }
-        }

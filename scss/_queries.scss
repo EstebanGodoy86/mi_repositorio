@@ -1,62 +1,105 @@
-    body {
-        header {
+        body {
+            header {
+                @media only screen and (min-width: 320px) and (max-width: 479px) {
+                    .navbar-expand-lg {
+                        display: flex;
+                        background-color: rgba(12, 12, 248, 0.5);
+                        flex-wrap: wrap;
+                        justify-content: flex-start;
+                        font-size: 2rem;
+                    }
+                    .navbar-nav {
+                        display: flex;
+                        flex-direction: column;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        list-style: none;
+                        font-size: 3rem;
+                        font-size: larger;
+                    }
+                    .momodeus {
+                        background-color: none;
+                        align-items: center;
+                        display: contents;
+                        width: 15rem;
+                        height: 15rem;
+                    }
+                    .nombremomo {
+                        background-color: none;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        .nombremomo_1 {
+                            width: 50rem;
+                        }
+                    }
+                    .navbar-dark .navbar-toggler {
+                        width: 20rem;
+                        color: rgba(255, 255, 255, .1);
+                        border-color: rgba(255, 255, 255, .1);
+                        //lineas hamburguesa
+                        .navbar-toggler-icon {
+                            display: inline-block;
+                            width: 15rem;
+                            height: 15rem;
+                            vertical-align: middle;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 100%;
+                        }
+                    }
+                }
+            }
             @media only screen and (min-width: 320px) and (max-width: 479px) {
-                .navbar-expand-lg {
-                    background-color: blue;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
+                //caja parrafo
+                .cajaC {
+                    width: 100%;
+                    .venus__img {
+                        display: flex;
+                        margin: 1rem;
+                    }
                 }
-                .momodeus {
-                    background-color: none;
-                    align-items: center;
-                    display: inline-flex;
-                    width: 18rem;
-                    height: 18rem;
+                .cajaD {
+                    box-sizing: border-box;
+                    background-color: rgba(12, 12, 248, 0.5);
+                    .quiensoy {
+                        font-size: 6rem;
+                        .parr1 {
+                            font-size: 6rem;
+                        }
+                    }
                 }
-            }
-        }
-        @media only screen and (min-width: 320px) and (max-width: 479px) {
-            //caja parrafo
-            .cajaC {
-                display: inline-flex;
-                margin: 1rem;
-                background-color: blue;
-                width: 100%;
-                .venus__img {
-                    display: flex;
-                    margin: 1rem;
+                //caja carrousel
+                .cajaE {
+                    width: 100rem;
+                    text-align: -webkit-center;
+                    margin: 2rem;
+                    background-color: rgba(12, 12, 248, 0.5);
+                    padding-top: 2rem;
+                    padding-bottom: 2rem;
                 }
-            }
-            .cajaD {
-                display: inline-flex;
-                box-sizing: border-box;
-                background-color: blue;
-                .quiensoy {
-                    font-size: 6rem;
-                    .parr1 {
+                .cajaF {
+                    background-color: rgba(12, 12, 248, 0.5);
+                    .promos {
+                        font-size: 6rem;
+                        background-color: rgba(12, 12, 248, 0.5);
+                    }
+                }
+                .pro {
+                    background-color: red;
+                    display: inline-block;
+                    height: 50rem;
+                    background-color: black;
+                }
+                .cajaG {
+                    text-align: center;
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                    margin: 2rem;
+                    background-color: rgba(12, 12, 248, 0.5);
+                    .contact {
                         font-size: 6rem;
                     }
                 }
             }
-            //caja carrousel
-            .cajaE {
-                display: inline;
-                width: 100rem;
-                text-align: -webkit-center;
-                margin: 2rem;
-                background-color: blue;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
-            }
-            .cajaF {
-                background-color: blue;
-                .promos {
-                    font-size: 6rem;
-                    background-color: blue;
-                }
-            }
-            .pro {
-                background-color: black;
-            }
         }
-    }

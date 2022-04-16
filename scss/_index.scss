@@ -1,10 +1,9 @@
-html {
-    margin: 0;
-    padding: 0;
+.container {
+    margin: 0auto;
+    padding: 0auto;
     box-sizing: border-box;
 }
 
 body {
-    display: inline-grid;
     background-image: url(../imagenes/carnevale.jpg);
 }

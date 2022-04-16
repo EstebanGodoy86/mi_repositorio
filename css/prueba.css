@@ -5,117 +5,171 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&display=swap");
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   body header .navbar-expand-lg {
-    background-color: blue;
+    display: flex;
+    background-color: rgba(12, 12, 248, 0.5);
     flex-wrap: wrap;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    font-size: 2rem; }
+  body header .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 3rem;
+    font-size: larger; }
   body header .momodeus {
     background-color: none;
     align-items: center;
+    display: contents;
+    width: 15rem;
+    height: 15rem; }
+  body header .nombremomo {
+    background-color: none;
     display: inline-flex;
-    width: 18rem;
-    height: 18rem; } }
+    align-items: center;
+    justify-content: center; }
+    body header .nombremomo .nombremomo_1 {
+      width: 50rem; }
+  body header .navbar-dark .navbar-toggler {
+    width: 20rem;
+    color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1); }
+    body header .navbar-dark .navbar-toggler .navbar-toggler-icon {
+      display: inline-block;
+      width: 15rem;
+      height: 15rem;
+      vertical-align: middle;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%; } }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   body .cajaC {
-    display: inline-flex;
-    margin: 1rem;
-    background-color: blue;
     width: 100%; }
     body .cajaC .venus__img {
       display: flex;
       margin: 1rem; }
   body .cajaD {
-    display: inline-flex;
     box-sizing: border-box;
-    background-color: blue; }
+    background-color: rgba(12, 12, 248, 0.5); }
     body .cajaD .quiensoy {
       font-size: 6rem; }
       body .cajaD .quiensoy .parr1 {
         font-size: 6rem; }
   body .cajaE {
-    display: inline;
     width: 100rem;
     text-align: -webkit-center;
     margin: 2rem;
-    background-color: blue;
+    background-color: rgba(12, 12, 248, 0.5);
     padding-top: 2rem;
     padding-bottom: 2rem; }
   body .cajaF {
-    background-color: blue; }
+    background-color: rgba(12, 12, 248, 0.5); }
     body .cajaF .promos {
       font-size: 6rem;
-      background-color: blue; }
+      background-color: rgba(12, 12, 248, 0.5); }
   body .pro {
-    background-color: black; } }
+    background-color: red;
+    display: inline-block;
+    height: 50rem;
+    background-color: black; }
+  body .cajaG {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 2rem;
+    background-color: rgba(12, 12, 248, 0.5); }
+    body .cajaG .contact {
+      font-size: 6rem; } }
 
-html {
-  margin: 0;
-  padding: 0;
+.container {
+  margin: 0auto;
+  padding: 0auto;
   box-sizing: border-box; }
 
 body {
-  display: inline-grid;
   background-image: url(../imagenes/carnevale.jpg); }
 
-header {
-  display: inline-block; }
-  header .navbar-expand-lg {
-    text-align: center;
-    background-color: rgba(73, 7, 97, 0.7);
+header .navbar-expand-lg {
+  text-align: center;
+  background-color: rgba(73, 7, 97, 0.7);
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 1rem; }
+  header .navbar-expand-lg .navbar {
+    position: relative;
+    display: inline-flex;
     flex-wrap: wrap;
-    justify-content: flex-start; }
-    header .navbar-expand-lg .navbar {
-      position: relative;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem; }
+    header .navbar-expand-lg .navbar .container-fluid {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: inherit;
       align-items: center;
-      justify-content: flex-start;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      margin-bottom: 2rem; }
-      header .navbar-expand-lg .navbar .container-fluid {
-        display: flex;
-        flex-wrap: inherit;
-        align-items: center;
-        justify-content: flex-start; }
-      header .navbar-expand-lg .navbar .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-        font-size: 2;
-        font-size: larger; }
-      header .navbar-expand-lg .navbar .momodeus {
-        background-color: none;
-        display: inline-flex;
-        width: 20rem;
-        height: 20rem;
-        align-items: center;
-        justify-content: center; }
-        header .navbar-expand-lg .navbar .momodeus:hover {
-          transform: rotateX(45deg);
-          transform: rotateX(45deg);
-          transform: rotateX(45deg);
-          transform: rotateX(45deg);
-          transform: rotatey(360deg);
-          cursor: pointer;
-          transition: transform 2s; }
+      justify-content: flex-start; }
+    header .navbar-expand-lg .navbar .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      font-size: 2rem;
+      font-size: larger; }
+    header .navbar-expand-lg .navbar .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto; }
+    header .navbar-expand-lg .navbar .momodeus {
+      background-color: none;
+      display: inline-flex;
+      width: 20rem;
+      height: 20rem;
+      align-items: center;
+      justify-content: center; }
+      header .navbar-expand-lg .navbar .momodeus:hover {
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotatey(360deg);
+        cursor: pointer;
+        transition: transform 2s; }
+    header .navbar-expand-lg .navbar .nombremomo {
+      background-color: none;
+      display: inline-flex;
+      width: 400rem;
+      height: 100rem;
+      align-items: center;
+      justify-content: center; }
+      header .navbar-expand-lg .navbar .nombremomo:hover {
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotatey(360deg);
+        cursor: pointer;
+        transition: transform 2s; }
 
 .cajaC {
   display: inline-flex;
-  margin: 1rem;
-  background: radial-gradient(#F8A521, #F2D409, #651773);
+  background: none;
   justify-content: center;
   justify-self: center;
   width: 100%; }
   .cajaC .venus__img {
     display: flex;
-    margin: 2rem;
+    width: 60rem;
     justify-items: center;
     text-align: center; }
     .cajaC .venus__img:hover {
-      transform: scale(1.4); }
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1); }
 
 .cajaD {
   display: inline-block;
@@ -128,7 +182,7 @@ header {
     font-family: "Bangers", cursive; }
 
 .parr1 {
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   font-family: "Special Elite", cursive; }
   .parr1 .textRed {
@@ -137,8 +191,8 @@ header {
 
 .cajaE {
   text-align: -webkit-center;
-  margin: 2rem;
-  background-color: rgba(73, 7, 97, 0.7); }
+  background-color: rgba(73, 7, 97, 0.7);
+  margin-top: 2rem; }
 
 .cajaF {
   background-color: rgba(73, 7, 97, 0.7); }
