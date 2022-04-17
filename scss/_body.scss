@@ -32,6 +32,7 @@
         display: inline-block;
         box-sizing: border-box;
         justify-content: center;
+        padding: 2rem;
         @include Block;
         .quiensoy {
             @include titulos;
@@ -40,9 +41,34 @@
     }
     
     .parr1 {
-        font-size: 1.5rem;
+        font-size: 3.5rem;
         color: white;
         font-family: $h3style;
+        text-align: center;
+        animation-name: parr1animated;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @keyframes parr1animated {
+            0% {
+                background: #000708;
+            }
+            20% {
+                background: #550258;
+            }
+            40% {
+                background: #a40487;
+            }
+            60% {
+                background: #890480;
+            }
+            80% {
+                background: #96018a;
+            }
+            100% {
+                background: #01000f;
+            }
+        }
         .textRed {
             color: map-get($map: $paletacolores, $key: 'cuatro');
             background-color: map-get($map: $paletacolores, $key: 'tres');
@@ -50,6 +76,8 @@
     }
     
     .cajaE {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         text-align: -webkit-center;
         @include Block;
         margin-top: 2rem;

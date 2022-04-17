@@ -6,7 +6,7 @@
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   body header .navbar-expand-lg {
     display: flex;
-    background-color: rgba(12, 12, 248, 0.5);
+    background-color: rgba(73, 7, 97, 0.7);
     flex-wrap: wrap;
     justify-content: flex-start;
     font-size: 2rem; }
@@ -52,36 +52,100 @@
       margin: 1rem; }
   body .cajaD {
     box-sizing: border-box;
-    background-color: rgba(12, 12, 248, 0.5); }
+    background-color: rgba(73, 7, 97, 0.7); }
     body .cajaD .quiensoy {
       font-size: 6rem; }
-      body .cajaD .quiensoy .parr1 {
-        font-size: 6rem; }
+    body .cajaD .parr1 {
+      text-align: center;
+      font-size: 4.5rem;
+      color: white; }
   body .cajaE {
     width: 100rem;
     text-align: -webkit-center;
     margin: 2rem;
-    background-color: rgba(12, 12, 248, 0.5);
+    background-color: rgba(73, 7, 97, 0.7);
     padding-top: 2rem;
     padding-bottom: 2rem; }
   body .cajaF {
-    background-color: rgba(12, 12, 248, 0.5); }
+    display: grid;
+    background-color: rgba(73, 7, 97, 0.7); }
     body .cajaF .promos {
       font-size: 6rem;
-      background-color: rgba(12, 12, 248, 0.5); }
+      background-color: rgba(73, 7, 97, 0.7); }
   body .pro {
-    background-color: red;
     display: inline-block;
-    height: 50rem;
+    height: auto;
+    margin: 1.5rem;
     background-color: black; }
+  body tbody {
+    color: yellow;
+    font-size: 4.5rem; }
   body .cajaG {
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
     margin: 2rem;
-    background-color: rgba(12, 12, 248, 0.5); }
-    body .cajaG .contact {
-      font-size: 6rem; } }
+    background-color: rgba(73, 7, 97, 0.7); }
+    body .cajaG .caja_g .contact {
+      color: yellow;
+      font-size: 6rem; }
+  body fieldset {
+    color: yellow;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+    body fieldset label {
+      color: white; }
+  body legend {
+    font-size: 3.5rem; }
+  body label {
+    font-size: 3.5rem; }
+  body input {
+    font-size: 2.5rem; }
+  body #envio {
+    width: 2rem;
+    height: 2rem; }
+  body #domicilio {
+    width: 2rem;
+    height: 2rem; }
+  body #localidad {
+    font-size: 2.8;
+    width: 40rem;
+    height: 5rem; }
+  body .dejatuMensaje {
+    color: yellow; }
+  body #checkbox {
+    width: 2rem;
+    height: 2rem; }
+  body #canvas {
+    width: 2rem;
+    height: 2rem; }
+  body textarea {
+    width: 50rem;
+    height: 30rem;
+    resize: vertical; }
+  body .cajaH {
+    background-color: rgba(73, 7, 97, 0.7); }
+    body .cajaH .visita {
+      font-size: 6rem; }
+  body .mapa {
+    width: 50rem;
+    height: 50rem; } }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  body .cajaI {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem; }
+    body .cajaI .info {
+      background-color: rgba(73, 7, 97, 0.7); }
+  body .derechos {
+    background-color: rgba(73, 7, 97, 0.7);
+    color: white; }
+  body .cajaJ {
+    color: yellow;
+    background-color: rgba(73, 7, 97, 0.7); } }
 
 .container {
   margin: 0auto;
@@ -175,6 +239,7 @@ header .navbar-expand-lg {
   display: inline-block;
   box-sizing: border-box;
   justify-content: center;
+  padding: 2rem;
   background-color: rgba(73, 7, 97, 0.7); }
   .cajaD .quiensoy {
     text-align: center;
@@ -182,14 +247,35 @@ header .navbar-expand-lg {
     font-family: "Bangers", cursive; }
 
 .parr1 {
-  font-size: 1.5rem;
+  font-size: 3.5rem;
   color: white;
-  font-family: "Special Elite", cursive; }
+  font-family: "Special Elite", cursive;
+  text-align: center;
+  animation-name: parr1animated;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes parr1animated {
+  0% {
+    background: #000708; }
+  20% {
+    background: #550258; }
+  40% {
+    background: #a40487; }
+  60% {
+    background: #890480; }
+  80% {
+    background: #96018a; }
+  100% {
+    background: #01000f; } }
   .parr1 .textRed {
     color: red;
     background-color: #efff0c; }
 
 .cajaE {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   text-align: -webkit-center;
   background-color: rgba(73, 7, 97, 0.7);
   margin-top: 2rem; }
@@ -298,63 +384,43 @@ body .cajaEsteban {
   100% {
     background: #3B0551; } }
 
-body .quiensoy1 {
-  display: flex;
+body .parr1 {
   text-align: center;
-  color: yellow;
-  font-family: "Bangers", cursive;
-  border-radius: 6rem;
-  background-color: rgba(73, 7, 97, 0.7);
-  justify-content: center;
-  -webkit-border-radius: 3rem;
-  -moz-border-radius: 3rem;
-  -ms-border-radius: 3rem;
-  -o-border-radius: 3rem; }
-
-body .parrafo1 {
-  background-color: rgba(73, 7, 97, 0.7);
-  display: grid;
+  font-size: 1.5rem;
   color: white;
-  font-size: 1.3rem;
-  grid-template-columns: 30% 30%;
-  grid-template-areas: 3fr;
-  grid-template-areas: 10fr;
-  justify-content: center; }
-
-body .parr2 {
-  background: violet;
-  animation-name: parr2animated;
+  background-color: rgba(73, 7, 97, 0.7);
+  animation-name: parr1animated;
   animation-duration: 4s;
   animation-timing-function: linear;
   animation-iteration-count: infinite; }
 
-@keyframes parr2animated {
+@keyframes parr1animated {
   0% {
-    background: #C68EDB; }
+    background: #000708; }
   20% {
-    background: #3B0551; }
+    background: #5e0674; }
   40% {
-    background: #C68EDB; }
+    background: #150127; }
   60% {
-    background: #3B0551; }
+    background: #9402b9; }
   80% {
-    background: #C68EDB; }
+    background: #180953; }
   100% {
-    background: #3B0551; } }
+    background: #01000f; } }
 
-.cajaI {
+body .cajaI {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
   background-color: rgba(73, 7, 97, 0.7); }
-  .cajaI .info {
+  body .cajaI .info {
     text-align: center;
     color: yellow;
     font-family: "Bangers", cursive; }
-  .cajaI .derechos {
+  body .cajaI .derechos {
     color: white;
     font-family: "Bangers", cursive; }
-  .cajaI .cajaJ {
+  body .cajaI .cajaJ {
     font-style: "Bangers", cursive;
     color: yellow; }
 
