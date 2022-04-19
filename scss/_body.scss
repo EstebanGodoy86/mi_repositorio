@@ -39,7 +39,7 @@
                     display: inline_flex;
                     @include titulos;
                     font-family: $tistyle;
-                    font-size: 4rem;
+                    @include size4;
                 }
             }
             
@@ -48,7 +48,7 @@
                     display: inline_flex;
                     @include titulos;
                     font-family: $tistyle;
-                    font-size: 4rem;
+                    @include size4;
                 }
             }
             
@@ -119,7 +119,7 @@
                     justify-content: center;
                     margin-top: 10px;
                     .promos {
-                        font-size: 4rem;
+                        @include size4;
                     }
                 }
                 .pro {
@@ -133,7 +133,7 @@
                     justify-content: center;
                     margin-top: 10px;
                     .promos {
-                        font-size: 4rem;
+                        @include size4;
                     }
                 }
                 .pro {
@@ -151,7 +151,7 @@
                 color: yellow;
                 font-family: $tistyle;
                 tr {
-                    font-size: 4rem;
+                    @include size4;
                 }
             }
             
@@ -187,7 +187,7 @@
                 .contact {
                     @include titulos;
                     font-family: $tistyle;
-                    font-size: 4rem;
+                    @include size4;
                 }
             }
             
@@ -205,12 +205,12 @@
                     }
                     legend {
                         font-size: 2.4rem;
-                        ;
                     }
                 }
-                textarea {
-                    width: 60rem;
-                    resize: vertical;
+                .dejaMensaje {
+                    font-size: 2rem;
+                    color: yellow;
+                    font-family: tidtyles;
                 }
             }
             
@@ -231,9 +231,10 @@
                         ;
                     }
                 }
-                textarea {
-                    width: 60rem;
-                    resize: vertical;
+                .dejaMensaje {
+                    font-size: 3rem;
+                    color: yellow;
+                    font-family: tidtyles;
                 }
             }
             
@@ -248,11 +249,70 @@
                 }
             }
             
-            textarea {
-                width: 60rem;
-                resize: vertical;
+            //cuadro mensaje
+            .cuadroMensaje {
+                width: 40rem;
+                height: 30rem;
             }
             
+            //cuasdro mensaje 320
+            @include movil320 {
+                .cuadroMensaje {
+                    width: 20rem !important;
+                    height: 30rem !important;
+                }
+            }
+            
+            //cuadro mensaje 480
+            @include movil480 {
+                .cuadroMensaje {
+                    width: 25rem !important;
+                    height: 13rem !important;
+                }
+            }
+            
+            //letras imput enviar ,cancelar,etc
+            input {
+                width: 10rem;
+                height: 5rem;
+            }
+            
+            @include movil320 {
+                input {
+                    width: 20rem;
+                    height: 5rem;
+                }
+            }
+            
+            @include movil480 {
+                input {
+                    width: 20rem;
+                    height: 3rem;
+                }
+            }
+            
+            #localidad {
+                width: 15rem;
+                height: 3rem;
+            }
+            
+            fieldset {
+                color: yellow;
+                min-width: 0;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                label {
+                    color: white;
+                }
+            }
+            
+            #checkbox {
+                width: 2rem;
+                height: 2rem;
+            }
+            
+            //Donde Estamos
             .cajaH {
                 text-align: center;
                 @include Block;
@@ -262,7 +322,52 @@
                 }
             }
             
-            .cajaI {}
+            //Donde Estamos 320-cajah
+            @include movil320 {
+                .cajaH {
+                    text-align: center;
+                    @include Block;
+                    .visita {
+                        @include titulos;
+                        font-family: $tistyle;
+                        @include size4;
+                    }
+                }
+            }
+            
+            //Donde Estamos 480-cajah
+            @include movil480 {
+                .cajaH {
+                    text-align: center;
+                    @include Block;
+                    .visita {
+                        @include titulos;
+                        font-family: $tistyle;
+                        @include size4;
+                    }
+                }
+            }
+            
+            .cajaI {
+                .info {
+                    @include titulos;
+                    font-family: $tistyle;
+                }
+            }
+            
+            //queries cajai 320
+            .cajaI {
+                .info {
+                    @include size4;
+                }
+            }
+            
+            //queries caja I 420
+            .cajaI {
+                .info {
+                    @include size4;
+                }
+            }
             
             iframe {
                 width: 80rem;

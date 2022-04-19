@@ -60,3 +60,7 @@
                                 text-align: center;
                                 color: yellow;
                             }
+                            
+                            @mixin size4 {
+                                font-size: 4rem;
+                            }

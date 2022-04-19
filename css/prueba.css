@@ -225,9 +225,10 @@ tbody {
       font-size: 2.4rem; }
     fieldset legend {
       font-size: 2.4rem; }
-  textarea {
-    width: 60rem;
-    resize: vertical; } }
+  .dejaMensaje {
+    font-size: 2rem;
+    color: yellow;
+    font-family: tidtyles; } }
 
 @media only screen and (min-width: 480px) and (max-width: 759px) {
   fieldset {
@@ -241,9 +242,10 @@ tbody {
       font-size: 2.4rem; }
     fieldset legend {
       font-size: 2.4rem; }
-  textarea {
-    width: 60rem;
-    resize: vertical; } }
+  .dejaMensaje {
+    font-size: 3rem;
+    color: yellow;
+    font-family: tidtyles; } }
 
 fieldset {
   color: yellow;
@@ -254,9 +256,50 @@ fieldset {
   fieldset label {
     color: white; }
 
-textarea {
-  width: 60rem;
-  resize: vertical; }
+.cuadroMensaje {
+  width: 40rem;
+  height: 30rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .cuadroMensaje {
+    width: 20rem !important;
+    height: 30rem !important; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .cuadroMensaje {
+    width: 25rem !important;
+    height: 13rem !important; } }
+
+input {
+  width: 10rem;
+  height: 5rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  input {
+    width: 20rem;
+    height: 5rem; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  input {
+    width: 20rem;
+    height: 3rem; } }
+
+#localidad {
+  width: 15rem;
+  height: 3rem; }
+
+fieldset {
+  color: yellow;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+  fieldset label {
+    color: white; }
+
+#checkbox {
+  width: 2rem;
+  height: 2rem; }
 
 .cajaH {
   text-align: center;
@@ -265,6 +308,37 @@ textarea {
     text-align: center;
     color: yellow;
     font-family: "Bangers", cursive; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .cajaH {
+    text-align: center;
+    background-color: rgba(73, 7, 97, 0.7); }
+    .cajaH .visita {
+      text-align: center;
+      color: yellow;
+      font-family: "Bangers", cursive;
+      font-size: 4rem; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .cajaH {
+    text-align: center;
+    background-color: rgba(73, 7, 97, 0.7); }
+    .cajaH .visita {
+      text-align: center;
+      color: yellow;
+      font-family: "Bangers", cursive;
+      font-size: 4rem; } }
+
+.cajaI .info {
+  text-align: center;
+  color: yellow;
+  font-family: "Bangers", cursive; }
+
+.cajaI .info {
+  font-size: 4rem; }
+
+.cajaI .info {
+  font-size: 4rem; }
 
 iframe {
   width: 80rem;
