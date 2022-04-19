@@ -10,14 +10,13 @@
 body {
   background-image: url(../imagenes/carnevale.jpg); }
 
-body header .navbar-expand-lg {
-  display: inline-block;
+header .navbar-expand-lg {
   text-align: center;
   background-color: rgba(73, 7, 97, 0.7);
   flex-wrap: wrap;
   justify-content: flex-start;
-  font-size: 2rem; }
-  body header .navbar-expand-lg .navbar {
+  font-size: 1rem; }
+  header .navbar-expand-lg .navbar {
     position: relative;
     display: inline-flex;
     flex-wrap: wrap;
@@ -26,27 +25,52 @@ body header .navbar-expand-lg {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin-bottom: 2rem; }
-    body header .navbar-expand-lg .navbar .container-fluid {
+    header .navbar-expand-lg .navbar .container-fluid {
       display: flex;
       flex-wrap: inherit;
       align-items: center;
+      justify-content: flex-start; }
+    header .navbar-expand-lg .navbar .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+      font-size: 2rem;
+      font-size: larger; }
+    header .navbar-expand-lg .navbar .navbar-collapse {
+      display: flex !important;
+      flex-basis: auto; }
+    header .navbar-expand-lg .navbar .momodeus {
+      background-color: none;
+      display: inline-flex;
+      width: 20rem;
+      height: 20rem;
+      align-items: center;
       justify-content: center; }
-      body header .navbar-expand-lg .navbar .container-fluid .navbar-nav {
-        display: flex;
-        flex-direction: row;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
-        font-size: 2rem;
-        font-size: larger; }
-        body header .navbar-expand-lg .navbar .container-fluid .navbar-nav .navbar-collapse {
-          display: flex !important;
-          flex-basis: auto; }
-          body header .navbar-expand-lg .navbar .container-fluid .navbar-nav .navbar-collapse .nombremomo {
-            background-color: none;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center; }
+      header .navbar-expand-lg .navbar .momodeus:hover {
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotatey(360deg);
+        cursor: pointer;
+        transition: transform 2s; }
+    header .navbar-expand-lg .navbar .nombremomo {
+      background-color: none;
+      display: inline-flex;
+      width: 400rem;
+      height: 100rem;
+      align-items: center;
+      justify-content: center; }
+      header .navbar-expand-lg .navbar .nombremomo:hover {
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotatey(360deg);
+        cursor: pointer;
+        transition: transform 2s; }
 
 .cajaC {
   display: inline-flex;
@@ -55,11 +79,11 @@ body header .navbar-expand-lg {
   justify-self: center;
   width: 100%; }
   .cajaC .venus__img {
+    margin-top: 15px;
     display: flex;
     width: 60rem;
     justify-items: center;
-    text-align: center;
-    margin: 2rem; }
+    text-align: center; }
 
 .cajaD {
   display: inline-block;
@@ -70,59 +94,156 @@ body header .navbar-expand-lg {
   .cajaD .quiensoy {
     text-align: center;
     color: yellow;
-    font-size: 4rem;
     font-family: "Bangers", cursive; }
 
-.parr1 {
-  padding: 2rem;
-  font-size: 2rem;
-  color: white;
-  text-align: center; }
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .quiensoy {
+    display: inline_flex;
+    text-align: center;
+    color: yellow;
+    font-family: "Bangers", cursive;
+    font-size: 4rem; } }
 
-.textRed {
-  color: red;
-  background-color: #efff0c; }
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .quiensoy {
+    display: inline_flex;
+    text-align: center;
+    color: yellow;
+    font-family: "Bangers", cursive;
+    font-size: 4rem; } }
+
+.parr1 {
+  font-size: 2.6rem;
+  color: white;
+  font-family: "Special Elite", cursive;
+  text-align: center; }
+  .parr1 .textRed {
+    color: red;
+    background-color: #efff0c; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .parr1 {
+    font-size: 1.6rem; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .parr1 {
+    font-size: 2.4rem; } }
 
 .cajaE {
-  display: flex;
-  justify-content: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  text-align: -moz-center;
+  text-align: -webkit-center;
   background-color: rgba(73, 7, 97, 0.7);
   margin-top: 2rem; }
+
+.ilustraciones {
+  height: 50rem;
+  width: 40rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .ilustraciones {
+    height: 30rem;
+    width: 20rem; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .ilustraciones {
+    height: 40rem;
+    width: 30rem; } }
 
 .cajaF {
   background-color: rgba(73, 7, 97, 0.7);
-  margin-top: 2rem; }
+  margin-top: 10px; }
   .cajaF .promos {
     text-align: center;
     color: yellow;
-    font-size: 4rem;
     font-family: "Bangers", cursive; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .cajaF {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px; }
+    .cajaF .promos {
+      font-size: 4rem; }
+  .pro {
+    display: table-row; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .cajaF {
+    display: grid;
+    justify-content: center;
+    margin-top: 10px; }
+    .cajaF .promos {
+      font-size: 4rem; }
+  .pro {
+    display: table-row; } }
 
 .pro {
   background-color: black; }
 
 tbody {
   color: yellow;
-  font-size: 2rem; }
+  font-family: "Bangers", cursive; }
+  tbody tr {
+    font-size: 4rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  tbody {
+    color: yellow;
+    font-family: "Bangers", cursive; }
+    tbody tr {
+      font-size: 2rem; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  tbody {
+    color: yellow;
+    font-family: "Bangers", cursive; }
+    tbody tr {
+      font-size: 2.7rem; } }
 
 .cajaG {
+  margin-top: 10px;
   text-align: center;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  margin: 2rem;
   background-color: rgba(73, 7, 97, 0.7); }
   .cajaG .contact {
     text-align: center;
     color: yellow;
-    font-size: 4rem;
-    font-family: "Bangers", cursive; }
+    font-family: "Bangers", cursive;
+    font-size: 4rem; }
 
-#contacto {
-  display: inline-block;
-  text-align: center; }
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  fieldset {
+    color: yellow;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+    fieldset label {
+      color: white;
+      font-size: 2.4rem; }
+    fieldset legend {
+      font-size: 2.4rem; }
+  textarea {
+    width: 60rem;
+    resize: vertical; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  fieldset {
+    color: yellow;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0; }
+    fieldset label {
+      color: white;
+      font-size: 2.4rem; }
+    fieldset legend {
+      font-size: 2.4rem; }
+  textarea {
+    width: 60rem;
+    resize: vertical; } }
 
 fieldset {
   color: yellow;
@@ -131,20 +252,11 @@ fieldset {
   margin: 0;
   border: 0; }
   fieldset label {
-    color: white;
-    font-size: 2rem; }
+    color: white; }
 
 textarea {
   width: 60rem;
   resize: vertical; }
-
-input {
-  width: 15rem;
-  height: 3rem; }
-
-#localidad {
-  width: 15rem;
-  height: 3rem; }
 
 .cajaH {
   text-align: center;
@@ -152,7 +264,6 @@ input {
   .cajaH .visita {
     text-align: center;
     color: yellow;
-    font-size: 4rem;
     font-family: "Bangers", cursive; }
 
 iframe {
@@ -163,45 +274,6 @@ iframe {
   iframe .derechos {
     font-family: "Bangers", cursive; }
 
-body .cajaEsteban {
-  display: flex;
-  justify-content: center;
-  background-color: transparent; }
-  body .cajaEsteban .esteban {
-    display: flex;
-    justify-content: center;
-    justify-self: center;
-    width: 30rem;
-    border-radius: 150rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    animation-name: esteban;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite; }
-    body .cajaEsteban .esteban:hover {
-      transform: rotateX(45deg);
-      transform: rotateX(45deg);
-      transform: rotateX(45deg);
-      transform: rotateX(45deg);
-      transform: rotatey(360deg);
-      cursor: pointer;
-      transition: transform 4s; }
-
-@keyframes esteban {
-  0% {
-    background: #3B0551; }
-  20% {
-    background: #3B0551; }
-  40% {
-    background: #ECEF0B; }
-  60% {
-    background: #3B0551; }
-  80% {
-    background: #ECEF0B; }
-  100% {
-    background: #3B0551; } }
-
 .cajaI {
   text-align: center;
   margin-top: 1rem;
@@ -210,7 +282,6 @@ body .cajaEsteban {
   .cajaI .info {
     text-align: center;
     color: yellow;
-    font-size: 4rem;
     font-family: "Bangers", cursive; }
 
 .derechos {

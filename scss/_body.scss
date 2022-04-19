@@ -1,141 +1,275 @@
-    @mixin Block {
-        background-color: rgba(73, 7, 97, 0.7);
-    }
-    
-    @mixin titulos {
-        text-align: center;
-        color: yellow;
-        font-size: 4rem;
-    }
-    
-    .cajaC {
-        display: inline-flex;
-        background: none;
-        justify-content: center;
-        justify-self: center;
-        width: 100%;
-        .venus__img {
-            display: flex;
-            width: 60rem;
-            justify-items: center;
-            text-align: center;
-            margin: 2rem;
-        }
-    }
-    
-    .cajaD {
-        display: inline-block;
-        box-sizing: border-box;
-        justify-content: center;
-        padding: 2rem;
-        @include Block;
-        .quiensoy {
-            @include titulos;
-            font-family: $tistyle;
-        }
-    }
-    
-    .parr1 {
-        padding: 2rem;
-        font-size: 2rem;
-        color: white;
-        text-align: center;
-    }
-    
-    .textRed {
-        color: map-get($map: $paletacolores, $key: 'cuatro');
-        background-color: map-get($map: $paletacolores, $key: 'tres');
-    }
-    
-    .cajaE {
-        display: flex;
-        justify-content: center;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        text-align: -moz-center;
-        @include Block;
-        margin-top: 2rem;
-    }
-    
-    .cajaF {
-        @include Block;
-        margin-top: 2rem;
-        .promos {
-            @include titulos;
-            font-family: $tistyle;
-        }
-    }
-    
-    .pro {
-        background-color: black;
-    }
-    
-    tbody {
-        color: yellow;
-        font-size: 2rem;
-    }
-    
-    .cajaG {
-        text-align: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        margin: 2rem;
-        @include Block;
-        .contact {
-            @include titulos;
-            font-family: $tistyle;
-        }
-    }
-    
-    #contacto {
-        display: inline-block;
-        text-align: center;
-    }
-    
-    fieldset {
-        color: yellow;
-        min-width: 0;
-        padding: 0;
-        margin: 0;
-        border: 0;
-        label {
-            color: white;
-            font-size: 2rem;
-        }
-    }
-    
-    textarea {
-        width: 60rem;
-        resize: vertical;
-    }
-    
-    input {
-        width: 15rem;
-        height: 3rem;
-    }
-    
-    #localidad {
-        width: 15rem;
-        height: 3rem;
-    }
-    
-    .cajaH {
-        text-align: center;
-        @include Block;
-        .visita {
-            @include titulos;
-            font-family: $tistyle;
-        }
-    }
-    
-    .cajaI {}
-    
-    iframe {
-        width: 80rem;
-        border: 0;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
-        .derechos {
-            font-family: $tistyle
-        }
-    }
+            @mixin Block {
+                background-color: rgba(73, 7, 97, 0.7);
+            }
+            
+            @mixin titulos {
+                text-align: center;
+                color: yellow;
+            }
+            
+            .cajaC {
+                display: inline-flex;
+                background: none;
+                justify-content: center;
+                justify-self: center;
+                width: 100%;
+                .venus__img {
+                    margin-top: 15px;
+                    display: flex;
+                    width: 60rem;
+                    justify-items: center;
+                    text-align: center;
+                }
+            }
+            
+            .cajaD {
+                display: inline-block;
+                box-sizing: border-box;
+                justify-content: center;
+                padding: 2rem;
+                @include Block;
+                .quiensoy {
+                    @include titulos;
+                    font-family: $tistyle;
+                }
+            }
+            
+            @include movil320 {
+                .quiensoy {
+                    display: inline_flex;
+                    @include titulos;
+                    font-family: $tistyle;
+                    font-size: 4rem;
+                }
+            }
+            
+            @include movil480 {
+                .quiensoy {
+                    display: inline_flex;
+                    @include titulos;
+                    font-family: $tistyle;
+                    font-size: 4rem;
+                }
+            }
+            
+            .parr1 {
+                font-size: 2.6rem;
+                color: white;
+                font-family: $h3style;
+                text-align: center;
+                .textRed {
+                    color: map-get($map: $paletacolores, $key: 'cuatro');
+                    background-color: map-get($map: $paletacolores, $key: 'tres');
+                }
+            }
+            
+            //queries 320
+            @include movil320 {
+                .parr1 {
+                    font-size: 1.6rem;
+                }
+            }
+            
+            //queries 480
+            @include movil480 {
+                .parr1 {
+                    font-size: 2.4rem;
+                }
+            }
+            
+            .cajaE {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                text-align: -webkit-center;
+                @include Block;
+                margin-top: 2rem;
+            }
+            
+            .ilustraciones {
+                height: 50rem;
+                width: 40rem;
+            }
+            
+            @include movil320 {
+                .ilustraciones {
+                    height: 30rem;
+                    width: 20rem;
+                }
+            }
+            
+            @include movil480 {
+                .ilustraciones {
+                    height: 40rem;
+                    width: 30rem;
+                }
+            }
+            
+            .cajaF {
+                @include Block;
+                margin-top: 10px;
+                .promos {
+                    @include titulos;
+                    font-family: $tistyle;
+                }
+            }
+            
+            @include movil320 {
+                .cajaF {
+                    display: grid;
+                    justify-content: center;
+                    margin-top: 10px;
+                    .promos {
+                        font-size: 4rem;
+                    }
+                }
+                .pro {
+                    display: table-row;
+                }
+            }
+            
+            @include movil480 {
+                .cajaF {
+                    display: grid;
+                    justify-content: center;
+                    margin-top: 10px;
+                    .promos {
+                        font-size: 4rem;
+                    }
+                }
+                .pro {
+                    display: table-row;
+                }
+            }
+            
+            //termina queries cajaf
+            .pro {
+                background-color: black;
+            }
+            
+            //letras tabla promo
+            tbody {
+                color: yellow;
+                font-family: $tistyle;
+                tr {
+                    font-size: 4rem;
+                }
+            }
+            
+            //queries letras tabla promo 320
+            @include movil320 {
+                tbody {
+                    color: yellow;
+                    font-family: $tistyle;
+                    tr {
+                        font-size: 2rem;
+                    }
+                }
+            }
+            
+            //queries letras tabla promo 480
+            @include movil480 {
+                tbody {
+                    color: yellow;
+                    font-family: $tistyle;
+                    tr {
+                        font-size: 2.7rem;
+                    }
+                }
+            }
+            
+            //caja contacto
+            .cajaG {
+                margin-top: 10px;
+                text-align: center;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                @include Block;
+                .contact {
+                    @include titulos;
+                    font-family: $tistyle;
+                    font-size: 4rem;
+                }
+            }
+            
+            //queries caja contacto 320
+            @include movil320 {
+                fieldset {
+                    color: yellow;
+                    min-width: 0;
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                    label {
+                        color: white;
+                        font-size: 2.4rem;
+                    }
+                    legend {
+                        font-size: 2.4rem;
+                        ;
+                    }
+                }
+                textarea {
+                    width: 60rem;
+                    resize: vertical;
+                }
+            }
+            
+            //queries caja contacto 480
+            @include movil480 {
+                fieldset {
+                    color: yellow;
+                    min-width: 0;
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                    label {
+                        color: white;
+                        font-size: 2.4rem;
+                    }
+                    legend {
+                        font-size: 2.4rem;
+                        ;
+                    }
+                }
+                textarea {
+                    width: 60rem;
+                    resize: vertical;
+                }
+            }
+            
+            fieldset {
+                color: yellow;
+                min-width: 0;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                label {
+                    color: white;
+                }
+            }
+            
+            textarea {
+                width: 60rem;
+                resize: vertical;
+            }
+            
+            .cajaH {
+                text-align: center;
+                @include Block;
+                .visita {
+                    @include titulos;
+                    font-family: $tistyle;
+                }
+            }
+            
+            .cajaI {}
+            
+            iframe {
+                width: 80rem;
+                border: 0;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+                .derechos {
+                    font-family: $tistyle
+                }
+            }
