@@ -23,3 +23,16 @@
                             86,
                             11),
                             );
+                            body {
+                                background-image: url(../imagenes/carnevale.jpg);
+                            }
+                            
+                            @mixin Block {
+                                background-color: rgba(73, 7, 97, 0.7);
+                            }
+                            
+                            @mixin titulos {
+                                text-align: center;
+                                color: yellow;
+                                font-size: 4rem;
+                            }

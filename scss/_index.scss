@@ -1,9 +1,4 @@
-.container {
-    margin: 0auto;
-    padding: 0auto;
-    box-sizing: border-box;
-}
-
-body {
-    background-image: url(../imagenes/carnevale.jpg);
+* {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }

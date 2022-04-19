@@ -58,93 +58,96 @@
     </header>
     <!-- fin nav -->
 
-    <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4 position-relative">
-            <label for="validationTooltip01" class="form-label">Primer Nombre</label>
-            <input type="text" class="form-control" id="validationTooltip01" value="esteban" required>
-            <div class="valid-tooltip">
-                Looks good!
+    <!-- abre contacto -->
+
+
+    <div class="caja_contacto">
+        <section class="cajaG">
+            <article class="caja_g">
+
+                <h1 class="contact" alt="titulo contactame">Contactame</h1>
+
+                <form action="xxx.xx" method="post" id="contacto">
+                    <fieldset>
+                        >
+                        <legend>Datos Personales</legend>
+                        <label for="nombre" alt="nombre y apellido">Nombre y Apellido</label>
+                        <input type="text" placeholder="mengano delano" name="nombre" id="nombre">
+                        <br>
+                        <label for="email" alt="email">Email</label>
+                        <input type="email" placeholder="email@email" name="email" id="email">
+                        <br>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos de pedido</legend>
+                        <label for="cuadros30x40" alt="cuadros30x40">Cuadros30x40</label>
+                        <input type="checkbox" name="cuadros30x40" id="cuadros30x40" value="cuadros30x40">
+                        <br>
+                        <label for="canvas" alt="canvas">Canvas</label>
+                        <input type="checkbox" name="canvas" id="canvas" value="canvas">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Informacion de Envio</legend>
+                        <label for="envio" alt="envios">Retiro en el local</label>
+                        <input type="radio" name="envio" id="envio" value="envio">
+                        <br>
+                        <label for="domicilio" alt="domicilio">Envio a domicilio</label>
+                        <input type="radio" name="envio" id="domicilio" value="domicilio">
+                        <br>
+
+                        <select name="localidad" alt="localidad" id="localidad">
+                    <option value="caba">CABA</option>
+                    <option value="baires">Buenso Aires</option>
+                    <option value="interior">Interior del pais</option>
+                </select>
+                    </fieldset>
+                    <br>
+                    <label for="mensaje" alt="mensaje" class="dejaMensaje">Deja tu mensaje</label>
+                    <br>
+                    <textarea name="mensaje" class="cuadroMensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="reset" value="cancelar">
+                    <input type="submit" value="enviar">
+                    <input type="button" value="no hace nada sin programacion">
+                </form>
+
+
+            </article>
+        </section>
+        <!-- aca cierra contacto  -->
+
+
+        <!-- inicio footer -->
+        <footer class="cajaI">
+
+            <div>
+                <h1 class="info">Mas informacion</h1>
+
+                <h3 class="derechos">Todos los derechos de autor esta reservados. Prohibida su copia,reproduccion o el uso sin autorizacion</h3>
             </div>
-        </div>
-        <div class="col-md-4 position-relative">
-            <label for="validationTooltip02" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="validationTooltip02" value="godoy" required>
-            <div class="valid-tooltip">
-                Looks good!
-            </div>
-        </div>
-        <div class="col-md-4 position-relative">
-            <label for="validationTooltipUsername" class="form-label">Username</label>
-            <div class="input-group has-validation">
-                <span class="input-group-text" id="validationTooltipUsernamePrepend">Example@youmail.com</span>
-                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                <div class="invalid-tooltip">
-                    Please choose a unique and valid username.
+
+
+            <!-- incluir target blank para que te abra en lengueta nueva no puselink porque no tengop facebook ni nada -->
+
+            <div class="cajaJ">
+                <div>
+                    <img src="imagenes\facebook.png" alt="logoFacebook" width="50" height="50">
+                    <label>Siguenos en facebook</label>
                 </div>
-            </div>
-        </div>
-        <div class="col-md-6 position-relative">
-            <label for="validationTooltip03" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" id="validationTooltip03" required>
-            <div class="invalid-tooltip">
-                Please provide a valid city.
-            </div>
-        </div>
-        <div class="col-md-3 position-relative">
-            <label for="validationTooltip04" class="form-label">localidad</label>
-            <select class="form-select" id="validationTooltip04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-            </select>
-            <div class="invalid-tooltip">
-                Please select a valid state.
-            </div>
-        </div>
-        <div class="col-md-3 position-relative">
-            <label for="validationTooltip05" class="form-label">Codigo postal</label>
-            <input type="text" class="form-control" id="validationTooltip05" required>
-            <div class="invalid-tooltip">
-                Please provide a valid zip.
-            </div>
-        </div>
-        <div class="col-12">
-            <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-    </form>
+                <div>
+                    <img src="imagenes\twitter.png" alt="logoTwitter" width="50" height="50">
+                    <label>Siguenos en </label>
+                </div>
+                <div>
+                    <img src="imagenes\youtu.png" alt="logoYoutube" width="50" height="50">
+                    <label>Siguenos en </label>
 
+                </div>
 
-
-    <!-- inicio footer -->
-    <footer class="cajaI">
-
-        <div>
-            <h1 class="info">Mas informacion</h1>
-
-            <h3 class="derechos">Todos los derechos de autor esta reservados. Prohibida su copia,reproduccion o el uso sin autorizacion</h3>
-        </div>
-
-
-        <!-- incluir target blank para que te abra en lengueta nueva no puselink porque no tengop facebook ni nada -->
-
-        <div class="cajaJ">
-            <div>
-                <img src="imagenes\facebook.png" alt="logoFacebook" width="50" height="50">
-                <label>Siguenos en facebook</label>
-            </div>
-            <div>
-                <img src="imagenes\twitter.png" alt="logoTwitter" width="50" height="50">
-                <label>Siguenos en </label>
-            </div>
-            <div>
-                <img src="imagenes\youtu.png" alt="logoYoutube" width="50" height="50">
-                <label>Siguenos en </label>
-
-            </div>
-
-    </footer>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+        </footer>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
 
 </body>
 

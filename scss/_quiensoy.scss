@@ -1,97 +1,49 @@
-    body {
-        .cajaEsteban {
-            display: flex;
-            justify-content: center;
-            background-color: transparent;
-            .esteban {
-                display: flex;
-                justify-content: center;
-                justify-self: center;
-                width: 30rem;
-                border-radius: 150rem;
-                margin-top: 2rem;
-                margin-bottom: 2rem;
-                animation-name: esteban;
-                animation-duration: 4s;
-                animation-timing-function: linear;
-                animation-iteration-count: infinite;
-                &:hover {
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotatey(360deg);
-                    cursor: pointer;
-                    transition: transform 4s;
-                    @keyframes esteban {
-                        0% {
-                            background: #3B0551;
-                        }
-                        20% {
-                            background: #3B0551;
-                        }
-                        40% {
-                            background: #ECEF0B;
-                        }
-                        60% {
-                            background: #3B0551;
-                        }
-                        80% {
-                            background: #ECEF0B;
-                        }
-                        100% {
-                            background: #3B0551;
+            body {
+                .cajaEsteban {
+                    display: flex;
+                    justify-content: center;
+                    background-color: transparent;
+                    .esteban {
+                        display: flex;
+                        justify-content: center;
+                        justify-self: center;
+                        width: 30rem;
+                        border-radius: 150rem;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                        animation-name: esteban;
+                        animation-duration: 4s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        &:hover {
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotatey(360deg);
+                            cursor: pointer;
+                            transition: transform 4s;
+                            @keyframes esteban {
+                                0% {
+                                    background: #3B0551;
+                                }
+                                20% {
+                                    background: #3B0551;
+                                }
+                                40% {
+                                    background: #ECEF0B;
+                                }
+                                60% {
+                                    background: #3B0551;
+                                }
+                                80% {
+                                    background: #ECEF0B;
+                                }
+                                100% {
+                                    background: #3B0551;
+                                }
+                            }
                         }
                     }
                 }
             }
-        }
-        .parr1 {
-            text-align: center;
-            font-size: 1.5rem;
-            color: white;
-            background-color: rgba(73, 7, 97, 0.7);
-            animation-name: parr1animated;
-            animation-duration: 4s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            @keyframes parr1animated {
-                0% {
-                    background: #000708;
-                }
-                20% {
-                    background: #5e0674;
-                }
-                40% {
-                    background: #150127;
-                }
-                60% {
-                    background: #9402b9;
-                }
-                80% {
-                    background: #180953;
-                }
-                100% {
-                    background: #01000f;
-                }
-            }
-        }
-        .cajaI {
-            text-align: center;
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            @include Block;
-            .info {
-                @include titulos;
-                font-family: $tistyle;
-            }
-            .derechos {
-                color: white;
-                font-family: $tistyle;
-            }
-            .cajaJ {
-                font-style: $tistyle;
-                color: yellow;
-            }
-        }
-    }
