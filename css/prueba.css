@@ -5,7 +5,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&display=swap");
 * {
   max-width: 100% !important;
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  flex-direction: column; }
 
 body {
   background-image: url(../imagenes/carnevale.jpg); }
@@ -15,8 +16,9 @@ header .navbar-expand-lg {
   background-color: rgba(73, 7, 97, 0.7);
   flex-wrap: wrap;
   justify-content: flex-start;
-  font-size: 1rem; }
+  font-size: 1.8rem; }
   header .navbar-expand-lg .navbar {
+    font-size: 1.8rem;
     position: relative;
     display: inline-flex;
     flex-wrap: wrap;
@@ -29,33 +31,17 @@ header .navbar-expand-lg {
       display: flex;
       flex-wrap: inherit;
       align-items: center;
-      justify-content: flex-start; }
+      justify-content: space-between; }
     header .navbar-expand-lg .navbar .navbar-nav {
       display: flex;
       flex-direction: row;
+      font-size: 4rem;
       padding-left: 0;
       margin-bottom: 0;
-      list-style: none;
-      font-size: 2rem;
-      font-size: larger; }
+      list-style: none; }
     header .navbar-expand-lg .navbar .navbar-collapse {
       display: flex !important;
       flex-basis: auto; }
-    header .navbar-expand-lg .navbar .momodeus {
-      background-color: none;
-      display: inline-flex;
-      width: 20rem;
-      height: 20rem;
-      align-items: center;
-      justify-content: center; }
-      header .navbar-expand-lg .navbar .momodeus:hover {
-        transform: rotateX(45deg);
-        transform: rotateX(45deg);
-        transform: rotateX(45deg);
-        transform: rotateX(45deg);
-        transform: rotatey(360deg);
-        cursor: pointer;
-        transition: transform 2s; }
     header .navbar-expand-lg .navbar .nombremomo {
       background-color: none;
       display: inline-flex;
@@ -63,21 +49,14 @@ header .navbar-expand-lg {
       height: 100rem;
       align-items: center;
       justify-content: center; }
-      header .navbar-expand-lg .navbar .nombremomo:hover {
-        transform: rotateX(45deg);
-        transform: rotateX(45deg);
-        transform: rotateX(45deg);
-        transform: rotateX(45deg);
-        transform: rotatey(360deg);
-        cursor: pointer;
-        transition: transform 2s; }
 
 .cajaC {
   display: inline-flex;
   background: none;
   justify-content: center;
   justify-self: center;
-  width: 100%; }
+  width: 100%;
+  flex-direction: row; }
   .cajaC .venus__img {
     margin-top: 15px;
     display: flex;
@@ -166,6 +145,7 @@ header .navbar-expand-lg {
     .cajaF .promos {
       font-size: 4rem; }
   .pro {
+    margin: 1rem;
     display: table-row; } }
 
 @media only screen and (min-width: 480px) and (max-width: 759px) {
@@ -176,6 +156,7 @@ header .navbar-expand-lg {
     .cajaF .promos {
       font-size: 4rem; }
   .pro {
+    margin: 2rem;
     display: table-row; } }
 
 .pro {
@@ -347,6 +328,36 @@ iframe {
   padding-bottom: 3rem; }
   iframe .derechos {
     font-family: "Bangers", cursive; }
+
+.container-404 {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background: transparent;
+  padding: 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  line-height: 1.7;
+  color: #434343; }
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  background: yellow;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px; }
+
+.imagen {
+  display: flex;
+  justify-content: space-between;
+  width: 10rem;
+  height: 30rem; }
+
+.cajaEsteban {
+  text-align: center; }
 
 .cajaI {
   text-align: center;

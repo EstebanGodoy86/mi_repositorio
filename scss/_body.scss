@@ -13,6 +13,7 @@
                 justify-content: center;
                 justify-self: center;
                 width: 100%;
+                flex-direction: row;
                 .venus__img {
                     margin-top: 15px;
                     display: flex;
@@ -123,6 +124,7 @@
                     }
                 }
                 .pro {
+                    margin: 1rem;
                     display: table-row;
                 }
             }
@@ -137,6 +139,7 @@
                     }
                 }
                 .pro {
+                    margin: 2rem;
                     display: table-row;
                 }
             }

@@ -3,19 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>error404</title>
-
+    <title>Error 404</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        body {
+            background: purple;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container-404 {
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+            background: transparente;
+            padding: 20px;
+            border-radius: 5px;
+            line-height: 1.7;
+            color: yellow;
+        }
+        
+        .titul {
+            font-size: 4rem;
+        }
+        
+        .boton {
+            display: inline-block;
+            margin-top: 15px;
+            text-decoration: none;
+            background: yellow;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        
+        .imagen {
+            display: flex;
+            justify-content: space-between;
+            width: 10rem;
+            height: 30rem;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container404"></div>
-    <h1>error404</h1>
-    <p>Esta pagina no esta disponible en estos momentos.Disculpa las molestias
-        <a href="index.html" class="boton"></a>
-        Pagina principal
-    </p>
+    <div class="container-404">
+        <h1 class="titul">Error 404</h1>
+        <p>Esta pàgina no se encuentra disponible en estos momentos. Disculpa las molestias.</p>
+        <a href="index.html" class="boton">
+			Pàgina Principal
+		</a>
+        <section class="imagen">
+            <img class="ducha" src="imagenes/ducha.png" alt="ilustraciones personalizadas">
+        </section>
+    </div>
+
 </body>
 
 </html>

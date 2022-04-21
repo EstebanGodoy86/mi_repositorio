@@ -8,8 +8,9 @@ header {
         @include Block;
         flex-wrap: wrap;
         justify-content: flex-start;
-        font-size: 1rem;
+        font-size: 1.8rem;
         .navbar {
+            font-size: 1.8rem;
             position: relative;
             display: inline-flex;
             flex-wrap: wrap;
@@ -22,37 +23,19 @@ header {
                 display: flex;
                 flex-wrap: inherit;
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: space-between;
             }
             .navbar-nav {
                 display: flex;
                 flex-direction: row;
+                font-size: 4rem;
                 padding-left: 0;
                 margin-bottom: 0;
                 list-style: none;
-                font-size: 2rem;
-                font-size: larger;
             }
             .navbar-collapse {
                 display: flex!important;
                 flex-basis: auto;
-            }
-            .momodeus {
-                background-color: none;
-                display: inline-flex;
-                width: 20rem;
-                height: 20rem;
-                align-items: center;
-                justify-content: center;
-                &:hover {
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotatey(360deg);
-                    cursor: pointer;
-                    transition: transform 2s;
-                }
             }
             .nombremomo {
                 background-color: none;
@@ -61,15 +44,6 @@ header {
                 height: 100rem;
                 align-items: center;
                 justify-content: center;
-                &:hover {
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotateX(45deg);
-                    transform: rotatey(360deg);
-                    cursor: pointer;
-                    transition: transform 2s;
-                }
             }
         }
     }

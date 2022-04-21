@@ -1,24 +1,29 @@
-body {
-    background: purple;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.container {
+.container-404 {
     text-align: center;
     width: 100%;
-    max-width: 400 px;
-    align-items: center;
-    background: yellow;
-    padding: 2rem;
+    max-width: 400px;
+    background: transparent;
+    padding: 20px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+    line-height: 1.7;
+    color: #434343;
 }
 
 .boton {
     display: inline-block;
     margin-top: 15px;
     text-decoration: none;
+    background: yellow;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.imagen {
+    display: flex;
+    justify-content: space-between;
+    width: 10rem;
+    height: 30rem;
 }
