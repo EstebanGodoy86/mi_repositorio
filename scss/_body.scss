@@ -68,6 +68,32 @@
                 }
             }
             
+            .cajaEsteban {
+                display: grid;
+                .esteban {
+                    display: block;
+                    justify-content: center;
+                    justify-self: center;
+                    width: 30rem;
+                    border-radius: 150rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    animation-name: esteban;
+                    animation-duration: 4s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    &:hover {
+                        transform: rotateX(45deg);
+                        transform: rotateX(45deg);
+                        transform: rotateX(45deg);
+                        transform: rotateX(45deg);
+                        transform: rotatey(360deg);
+                        cursor: pointer;
+                        transition: transform 4s;
+                    }
+                }
+            }
+            
             //queries 320 caja D parrafo y titulo---------------------
             @include movil320 {
                 .quiensoy {
@@ -75,6 +101,37 @@
                     @include titulos;
                     font-family: $tistyle;
                     @include size4;
+                }
+                .cajaEsteban {
+                    display: grid;
+                    .esteban {
+                        display: block;
+                        justify-content: center;
+                        justify-self: center;
+                        width: 18rem;
+                        height: 18rem;
+                        border-radius: 150rem;
+                        margin-top: 2rem;
+                        margin-bottom: 2rem;
+                        animation-name: esteban;
+                        animation-duration: 4s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        &:hover {
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotatey(360deg);
+                            cursor: pointer;
+                            transition: transform 4s;
+                        }
+                    }
+                }
+                .esteban1 {
+                    width: 16rem;
+                    height: 19rem;
+                    ;
                 }
             }
             
@@ -85,6 +142,35 @@
                     @include titulos;
                     font-family: $tistyle;
                     @include size4;
+                }
+                .cajaEsteban {
+                    display: grid;
+                    .esteban {
+                        display: block;
+                        justify-content: center;
+                        justify-self: center;
+                        width: 18rem;
+                        height: 18rem;
+                        border-radius: 150rem;
+                        animation-name: esteban;
+                        animation-duration: 4s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        &:hover {
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotateX(45deg);
+                            transform: rotatey(360deg);
+                            cursor: pointer;
+                            transition: transform 4s;
+                        }
+                    }
+                }
+                .esteban1 {
+                    width: 16rem;
+                    height: 19rem;
+                    ;
                 }
             }
             

@@ -13,6 +13,20 @@
 body {
   background-image: url(../imagenes/carnevale.jpg); }
 
+@keyframes esteban {
+  0% {
+    background: #3B0551; }
+  20% {
+    background: #3B0551; }
+  40% {
+    background: #ECEF0B; }
+  60% {
+    background: #3B0551; }
+  80% {
+    background: #ECEF0B; }
+  100% {
+    background: #3B0551; } }
+
 header .navbar-expand-lg {
   text-align: center;
   background-color: rgba(73, 7, 97, 0.7);
@@ -104,13 +118,62 @@ header .navbar-expand-lg {
     color: yellow;
     font-family: "Bangers", cursive; }
 
+.cajaEsteban {
+  display: grid; }
+  .cajaEsteban .esteban {
+    display: block;
+    justify-content: center;
+    justify-self: center;
+    width: 30rem;
+    border-radius: 150rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    animation-name: esteban;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; }
+    .cajaEsteban .esteban:hover {
+      transform: rotateX(45deg);
+      transform: rotateX(45deg);
+      transform: rotateX(45deg);
+      transform: rotateX(45deg);
+      transform: rotatey(360deg);
+      cursor: pointer;
+      transition: transform 4s; }
+
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .quiensoy {
     display: inline_flex;
     text-align: center;
     color: yellow;
     font-family: "Bangers", cursive;
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .cajaEsteban {
+    display: grid; }
+    .cajaEsteban .esteban {
+      display: block;
+      justify-content: center;
+      justify-self: center;
+      width: 18rem;
+      height: 18rem;
+      border-radius: 150rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      animation-name: esteban;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+      .cajaEsteban .esteban:hover {
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotatey(360deg);
+        cursor: pointer;
+        transition: transform 4s; }
+  .esteban1 {
+    width: 16rem;
+    height: 19rem; } }
 
 @media only screen and (min-width: 480px) and (max-width: 759px) {
   .quiensoy {
@@ -118,7 +181,31 @@ header .navbar-expand-lg {
     text-align: center;
     color: yellow;
     font-family: "Bangers", cursive;
-    font-size: 4rem; } }
+    font-size: 4rem; }
+  .cajaEsteban {
+    display: grid; }
+    .cajaEsteban .esteban {
+      display: block;
+      justify-content: center;
+      justify-self: center;
+      width: 18rem;
+      height: 18rem;
+      border-radius: 150rem;
+      animation-name: esteban;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+      .cajaEsteban .esteban:hover {
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(45deg);
+        transform: rotatey(360deg);
+        cursor: pointer;
+        transition: transform 4s; }
+  .esteban1 {
+    width: 16rem;
+    height: 19rem; } }
 
 .parr1 {
   font-size: 2.6rem;

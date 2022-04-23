@@ -69,3 +69,24 @@
                             @mixin size4 {
                                 font-size: 4rem;
                             }
+                            
+                            @keyframes esteban {
+                                0% {
+                                    background: #3B0551;
+                                }
+                                20% {
+                                    background: #3B0551;
+                                }
+                                40% {
+                                    background: #ECEF0B;
+                                }
+                                60% {
+                                    background: #3B0551;
+                                }
+                                80% {
+                                    background: #ECEF0B;
+                                }
+                                100% {
+                                    background: #3B0551;
+                                }
+                            }
