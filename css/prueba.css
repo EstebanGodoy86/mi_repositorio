@@ -129,6 +129,40 @@ header .navbar-expand-lg {
     color: red;
     background-color: #efff0c; }
 
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .quiensoy {
+    display: inline_flex;
+    text-align: center;
+    color: yellow;
+    font-family: "Bangers", cursive;
+    font-size: 4rem; } }
+
+.parr1 {
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  font-family: "Indie Flower", cursive; }
+  .parr1 .textRed {
+    color: red;
+    background-color: #efff0c; }
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  .quiensoy {
+    display: inline_flex;
+    text-align: center;
+    color: yellow;
+    font-family: "Bangers", cursive;
+    font-size: 4rem; } }
+
+.parr1 {
+  font-size: 1.9rem;
+  color: white;
+  text-align: center;
+  font-family: "Indie Flower", cursive; }
+  .parr1 .textRed {
+    color: red;
+    background-color: #efff0c; }
+
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .parr1 {
     font-size: 1.6rem;
@@ -232,6 +266,7 @@ tbody {
     font-size: 4rem;
     margin-bottom: 1.5rem; }
   .caja_g .parrafoG {
+    font-family: "Bangers", cursive;
     display: inline-block;
     font-size: 2.5rem;
     background-color: red;
@@ -392,6 +427,42 @@ tbody {
   .caja_g .btn-enviar:hover {
     background: #e39403; } }
 
+.cajaH iframe {
+  width: 80rem;
+  border: 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+  .info-form {
+    margin-left: 2rem; }
+  .cajafor {
+    margin: 1.8rem; }
+  .promos {
+    font-size: 4rem; }
+  .visita {
+    font-size: 4rem; }
+  .cajaH .visita {
+    font-size: 4rem; }
+  .cajaH iframe {
+    width: 80rem;
+    border: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+  .cajafor {
+    margin: 1.8rem; }
+  .promos {
+    font-size: 4rem; }
+  .cajaH .visita {
+    font-size: 4rem; }
+  .cajaH iframe {
+    width: 80rem;
+    border: 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem; } }
+
 .cajaH {
   text-align: center;
   background-color: rgba(73, 7, 97, 0.7); }
@@ -428,25 +499,6 @@ tbody {
     .cajaH .mapa {
       width: 30rem;
       height: 40rem; } }
-
-.cajaI .info {
-  text-align: center;
-  color: yellow;
-  font-family: "Bangers", cursive; }
-
-.cajaI .info {
-  font-size: 4rem; }
-
-.cajaI .info {
-  font-size: 4rem; }
-
-iframe {
-  width: 80rem;
-  border: 0;
-  padding-top: 3rem;
-  padding-bottom: 3rem; }
-  iframe .derechos {
-    font-family: "Bangers", cursive; }
 
 body {
   overflow-x: hidden !important; }
@@ -494,12 +546,43 @@ body {
   .cajaI .info {
     text-align: center;
     color: yellow;
-    font-family: "Bangers", cursive; }
+    font-family: "Bangers", cursive;
+    font-size: 4rem; }
 
 .derechos {
   color: white;
-  font-family: "Bangers", cursive; }
+  font-family: "Bangers", cursive;
+  font-size: 3rem; }
+
+.logos {
+  width: 5rem;
+  height: 5rem; }
 
 .cajaJ {
+  display: flex;
+  font-style: "Special Elite", cursive;
+  color: yellow;
+  flex-direction: row;
+  justify-content: center; }
+
+.redes {
+  margin: 10px;
+  display: flex;
   font-style: "Bangers", cursive;
-  color: yellow; }
+  font-size: 1.3rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .derechos {
+    font-size: 1.9rem; }
+  .logos {
+    width: 5rem;
+    height: 5rem; } }
+
+@media only screen and (min-width: 480px) and (max-width: 759px) {
+  .derechos {
+    font-size: 2.3rem; }
+  .logos {
+    width: 7rem;
+    height: 7rem; }
+  .redes {
+    font-size: 1.8rem; } }

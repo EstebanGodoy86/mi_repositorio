@@ -7,6 +7,7 @@
                 color: yellow;
             }
             
+            //caja error 404---------------------
             .container-404 {
                 text-align: center;
                 width: 100%;
@@ -37,6 +38,7 @@
                 height: 30rem;
             }
             
+            //abre cajaC imagen central principal
             .cajaC {
                 display: inline-flex;
                 background: none;
@@ -53,6 +55,7 @@
                 }
             }
             
+            //abre caja D---------------------
             .cajaD {
                 display: inline-block;
                 box-sizing: border-box;
@@ -65,6 +68,7 @@
                 }
             }
             
+            //queries 320 caja D parrafo y titulo---------------------
             @include movil320 {
                 .quiensoy {
                     display: inline_flex;
@@ -74,6 +78,7 @@
                 }
             }
             
+            //queries 480caja D parrafo y titulo----------------------
             @include movil480 {
                 .quiensoy {
                     display: inline_flex;
@@ -85,6 +90,48 @@
             
             .parr1 {
                 font-size: 2.6rem;
+                color: white;
+                text-align: center;
+                font-family: $squar;
+                .textRed {
+                    color: map-get($map: $paletacolores, $key: 'cuatro');
+                    background-color: map-get($map: $paletacolores, $key: 'tres');
+                }
+            }
+            
+            //queries 760 caja D parrafo y titulo----------------------
+            @include tablets760 {
+                .quiensoy {
+                    display: inline_flex;
+                    @include titulos;
+                    font-family: $tistyle;
+                    @include size4;
+                }
+            }
+            
+            .parr1 {
+                font-size: 2.6rem;
+                color: white;
+                text-align: center;
+                font-family: $squar;
+                .textRed {
+                    color: map-get($map: $paletacolores, $key: 'cuatro');
+                    background-color: map-get($map: $paletacolores, $key: 'tres');
+                }
+            }
+            
+            //queries desktop caja D parrafo y titulo----------------------
+            @include desktop {
+                .quiensoy {
+                    display: inline_flex;
+                    @include titulos;
+                    font-family: $tistyle;
+                    @include size4;
+                }
+            }
+            
+            .parr1 {
+                font-size: 1.9rem;
                 color: white;
                 text-align: center;
                 font-family: $squar;
@@ -182,7 +229,7 @@
                 background-color: black;
             }
             
-            //letras tabla promo
+            //letras tabla promo------------------------
             tbody {
                 color: yellow;
                 font-family: $tistyle;
@@ -191,7 +238,7 @@
                 }
             }
             
-            //queries letras tabla promo 320
+            //queries letras tabla promo 320-------------------------
             @include movil320 {
                 tbody {
                     color: yellow;
@@ -202,7 +249,7 @@
                 }
             }
             
-            //queries letras tabla promo 480
+            //queries letras tabla promo 480----------------------
             @include movil480 {
                 tbody {
                     color: yellow;
@@ -213,7 +260,7 @@
                 }
             }
             
-            //caja contacto
+            //caja contacto--------------------
             .cajaG {
                 margin-top: 1rem;
                 margin-bottom: 1rem;
@@ -234,6 +281,7 @@
                     margin-bottom: 1.5rem;
                 }
                 .parrafoG {
+                    font-family: $tistyle;
                     display: inline-block;
                     font-size: 2.5rem;
                     background-color: red;
@@ -422,6 +470,63 @@
                 }
             }
             
+            .cajaH {
+                iframe {
+                    width: 80rem;
+                    border: 0;
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                }
+            }
+            
+            //queries tablet cajaG 760_____________________
+            @include tablets760 {
+                .info-form {
+                    margin-left: 2rem;
+                }
+                .cajafor {
+                    margin: 1.8rem;
+                }
+                .promos {
+                    font-size: 4rem;
+                }
+                .visita {
+                    font-size: 4rem;
+                }
+                .cajaH {
+                    .visita {
+                        font-size: 4rem;
+                    }
+                    iframe {
+                        width: 80rem;
+                        border: 0;
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+            }
+            
+            //queries tablet desktop
+            @include desktop {
+                .cajafor {
+                    margin: 1.8rem;
+                }
+                .promos {
+                    font-size: 4rem;
+                }
+                .cajaH {
+                    .visita {
+                        font-size: 4rem;
+                    }
+                    iframe {
+                        width: 80rem;
+                        border: 0;
+                        padding-top: 3rem;
+                        padding-bottom: 3rem;
+                    }
+                }
+            }
+            
             //Donde Estamos
             .cajaH {
                 text-align: center;
@@ -467,36 +572,5 @@
                         width: 30rem;
                         height: 40rem;
                     }
-                }
-            }
-            
-            .cajaI {
-                .info {
-                    @include titulos;
-                    font-family: $tistyle;
-                }
-            }
-            
-            //queries cajai 320
-            .cajaI {
-                .info {
-                    @include size4;
-                }
-            }
-            
-            //queries caja I 420
-            .cajaI {
-                .info {
-                    @include size4;
-                }
-            }
-            
-            iframe {
-                width: 80rem;
-                border: 0;
-                padding-top: 3rem;
-                padding-bottom: 3rem;
-                .derechos {
-                    font-family: $tistyle
                 }
             }
