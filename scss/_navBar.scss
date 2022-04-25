@@ -1,50 +1,50 @@
-@mixin Block {
-    background-color: rgba(73, 7, 97, 0.7);
-}
-
-header {
-    .navbar-expand-lg {
-        text-align: center;
-        @include Block;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        font-size: 1.8rem;
-        .navbar {
-            font-size: 1.8rem;
-            position: relative;
-            display: inline-flex;
+    @mixin Block {
+        background-color: rgba(73, 7, 97, 0.7);
+    }
+    
+    header {
+        .navbar-expand-lg {
+            text-align: center;
+            @include Block;
             flex-wrap: wrap;
-            align-items: center;
             justify-content: flex-start;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            margin-bottom: 2rem;
-            .container-fluid {
-                display: flex;
-                flex-wrap: inherit;
-                align-items: center;
-                justify-content: space-between;
-            }
-            .navbar-nav {
-                display: flex;
-                flex-direction: row;
-                font-size: 4rem;
-                padding-left: 0;
-                margin-bottom: 0;
-                list-style: none;
-            }
-            .navbar-collapse {
-                display: flex!important;
-                flex-basis: auto;
-            }
-            .nombremomo {
-                background-color: none;
+            font-size: 1.8rem;
+            .navbar {
+                font-size: 1.8rem;
+                position: relative;
                 display: inline-flex;
-                width: 400rem;
-                height: 100rem;
+                flex-wrap: wrap;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                margin-bottom: 2rem;
+                .container-fluid {
+                    display: flex;
+                    flex-wrap: inherit;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .navbar-nav {
+                    display: flex;
+                    flex-direction: row;
+                    font-size: 4rem;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    list-style: none;
+                }
+                .navbar-collapse {
+                    display: flex !important;
+                    flex-basis: auto;
+                }
+                .nombremomo {
+                    background-color: none;
+                    display: inline-flex;
+                    width: 400rem;
+                    height: 100rem;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
-}
