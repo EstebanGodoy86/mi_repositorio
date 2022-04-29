@@ -1,0 +1,60 @@
+.cajaI {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    @include Block;
+    .info {
+        @include titulos;
+        font-family: $tistyle;
+        @include size4;
+    }
+}
+
+.derechos {
+    color: white;
+    font-family: $tistyle;
+    font-size: 3rem;
+}
+
+.logos {
+    width: 5rem;
+    height: 5rem;
+}
+
+.cajaJ {
+    display: flex;
+    font-style: $h3style;
+    color: yellow;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.redes {
+    margin: 10px;
+    display: flex;
+    font-style: $tistyle;
+    font-size: 1.3rem;
+}
+
+@include movil320 {
+    .derechos {
+        font-size: 1.9rem;
+    }
+    .logos {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+@include movil480 {
+    .derechos {
+        font-size: 2.3rem;
+    }
+    .logos {
+        width: 7rem;
+        height: 7rem;
+    }
+    .redes {
+        font-size: 1.8rem;
+    }
+}

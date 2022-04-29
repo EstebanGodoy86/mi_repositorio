@@ -1,0 +1,92 @@
+                                @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+                                @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&display=swap');
+                                @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Special+Elite&display=swap');
+                                $squar: 'Indie Flower',
+                                cursive;
+                                $tistyle:'Bangers',
+                                cursive;
+                                $parrstyle: 'Lobster',
+                                cursive;
+                                $h3style: 'Baloo 2',
+                                cursive;
+                                $paletacolores:('uno': rgb(42,
+                                2,
+                                42),
+                                'dos' :rgb(252,
+                                252,
+                                252),
+                                'tres' :rgb(239,
+                                255,
+                                12),
+                                'cuatro': rgb(255,
+                                0,
+                                0),
+                                'cinco' :rgb(60,
+                                6,
+                                239),
+                                'seis' :rgb(235,
+                                86,
+                                11),
+                                );
+                                //variables
+                                @mixin movil320 {
+                                    @media only screen and (min-width: 320px) and (max-width: 479px) {
+                                        @content;
+                                    }
+                                }
+                                
+                                @mixin movil480 {
+                                    @media only screen and (min-width: 480px) and (max-width: 759px) {
+                                        @content;
+                                    }
+                                }
+                                
+                                @mixin tablets760 {
+                                    @media only screen and (min-width: 760px) and (max-width: 1024px) {
+                                        @content;
+                                    }
+                                }
+                                
+                                @mixin desktop {
+                                    @media only screen and (min-width: 1024px) and (max-width: 1400px) {
+                                        @content;
+                                    }
+                                }
+                                
+                                body {
+                                    background-image: url(../imagenes/carnevale.jpg);
+                                }
+                                
+                                @mixin Block {
+                                    background-color: rgba(73, 7, 97, 0.7);
+                                }
+                                
+                                @mixin titulos {
+                                    text-align: center;
+                                    color: yellow;
+                                }
+                                
+                                @mixin size4 {
+                                    font-size: 4rem;
+                                }
+                                
+                                @keyframes esteban {
+                                    0% {
+                                        background: #3B0551;
+                                    }
+                                    20% {
+                                        background: #3B0551;
+                                    }
+                                    40% {
+                                        background: #ECEF0B;
+                                    }
+                                    60% {
+                                        background: #3B0551;
+                                    }
+                                    80% {
+                                        background: #ECEF0B;
+                                    }
+                                    100% {
+                                        background: #3B0551;
+                                    }
+                                }
